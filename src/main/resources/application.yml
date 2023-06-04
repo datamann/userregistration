@@ -1,0 +1,36 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  # info:
+  #   env:
+  #     enabled: true
+
+spring:
+    profiles:
+        active: default
+    datasource:
+          driver-class-name: org.postgresql.Driver
+    #     username: ${PROD_DB_USERNAME}
+          username: postgres
+    #     password: ${PROD_DB_PASSWORD}
+          password: password
+          name: userreg
+    #     url: jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}
+          url: jdbc:postgresql://localhost:5432/userreg?createDatabaseIfNotExist=true
+    sql:
+      init:
+        mode: always # you won't do this in prod, I'm just doing this for demo purposes
+logging:
+  level:
+    ROOT: ERROR
+    org.springframework.jdbc.core: DEBUG
+    org.springframework.web: DEBUG
+    # file: /logs/application-debug.log
+info:
+  application:
+    name: User Registration
+    description: A user Registration application
+    author: Stig B. Sivertsen
+    version: '@project.version@'
