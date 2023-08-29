@@ -129,7 +129,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-                    <jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5059</jvmArguments>
+                    <jvmArguments>-Xlint:-unchecked -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5059</jvmArguments>
                     <wait>500</wait>
                     <maxAttempts>240</maxAttempts>
                 </configuration>

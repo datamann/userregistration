@@ -2,7 +2,6 @@ package no.sivertsensoftware.userregistration.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
-import org.springframework.lang.NonNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -11,13 +10,9 @@ public final class User {
 
     @Id
     @JsonIgnore
-    @NonNull
     private Long id;
-    @NonNull
     private String first_name;
-    @NonNull
     private String last_name;
-    @NonNull
     private String email;
 
     public User(Long id, String first_name, String last_name, String email) {

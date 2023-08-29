@@ -1,4 +1,4 @@
 @NonNullApi
-package no.sivertsensoftware.userregistration.endpoints;
+package no.sivertsensoftware.userregistration;
 
 import org.springframework.lang.NonNullApi;
