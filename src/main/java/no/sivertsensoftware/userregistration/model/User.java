@@ -1,20 +1,24 @@
 package no.sivertsensoftware.userregistration.model;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.lang.NonNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Table("usertbl")
-public final class User{
-    
-    @Id @JsonIgnore
-    private Long id;
-    private String first_name;
-    private String last_name;
-    private String email;
+public final class User {
 
-    public User() {
-    }
+    @Id
+    @JsonIgnore
+    @NonNull
+    private Long id;
+    @NonNull
+    private String first_name;
+    @NonNull
+    private String last_name;
+    @NonNull
+    private String email;
 
     public User(Long id, String first_name, String last_name, String email) {
         this.id = id;
@@ -53,16 +57,6 @@ public final class User{
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    @Override
-    public String toString() {
-        return "{" +
-            " id='" + getId() + "'" +
-            ", first_name='" + getFirst_name() + "'" +
-            ", last_name='" + getLast_name() + "'" +
-            ", email='" + getEmail() + "'" +
-            "}";
     }
 
 }

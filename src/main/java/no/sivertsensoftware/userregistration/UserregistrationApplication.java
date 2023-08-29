@@ -4,6 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 import no.sivertsensoftware.userregistration.model.User;
 import no.sivertsensoftware.userregistration.repository.UserRepository;
@@ -18,13 +19,18 @@ public class UserregistrationApplication {
 	@Bean
 	CommandLineRunner run(UserRepository userRepository) {
 		return args -> {
-			User user1 = new User();
+			User user1 = new User(null, null, null, null);
 			user1.setId(null);
 			user1.setFirst_name("Stig");
 			user1.setLast_name("Sivertsen");
 			user1.setEmail("sbsivertsen@gmail.com");
-			userRepository.createUser(user1);
+			userRepository.save(user1);
 		};
 	}
+
+	@Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 
 }

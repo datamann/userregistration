@@ -1,3 +1,6 @@
+server:
+  port : 8180
+
 management:
   endpoints:
     web:
@@ -6,7 +9,11 @@ management:
   # info:
   #   env:
   #     enabled: true
-
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
 spring:
     profiles:
         active: default
@@ -22,12 +29,20 @@ spring:
     sql:
       init:
         mode: always # you won't do this in prod, I'm just doing this for demo purposes
-logging:
-  level:
-    ROOT: ERROR
-    org.springframework.jdbc.core: DEBUG
-    org.springframework.web: DEBUG
-    # file: /logs/application-debug.log
+    # security:
+    #    oauth2:
+    #      resourceserver:
+    #        jwt:
+    #          issuer-uri: http://localhost:8080/realms/master
+    #          token-duration: 1D
+    #          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+
+    # jwt:
+    #   auth:
+    #     converter:
+    #       resource-id: userregistration
+    #       principal-attribute: preferred_username
+
 info:
   application:
     name: User Registration
