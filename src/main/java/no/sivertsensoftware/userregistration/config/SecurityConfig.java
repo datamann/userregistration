@@ -1,8 +1,6 @@
 package no.sivertsensoftware.userregistration.config;
 
 import static org.springframework.security.config.Customizer.withDefaults;
-
-//import org.keycloak.authorization.client.util.HttpMethod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -43,16 +41,11 @@ public class SecurityConfig {
             .cors(cors -> cors.disable())
             .authorizeHttpRequests(authorizeRequests -> authorizeRequests
                 .requestMatchers(mvc.pattern(HttpMethod.GET, "/**")).hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
-                //.requestMatchers(mvc.pattern(HttpMethod.GET, "/frontend/**")).hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
+                .requestMatchers(mvc.pattern(HttpMethod.GET, "/login/oauth2/code/**")).hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
                 .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
                 .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-write")
                 .requestMatchers(mvc.pattern(HttpMethod.PUT, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-write")
                 .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-write")
-
-                //.requestMatchers(HttpMethod.GET,"/api/users/**").hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
-                //.requestMatchers(HttpMethod.POST,"/api/users/**").hasAuthority("SCOPE_userreg-write")
-                //.requestMatchers(HttpMethod.PUT,"/api/users/**").hasAuthority("SCOPE_userreg-write")
-                //.requestMatchers(HttpMethod.DELETE,"/api/users/**").hasAuthority("SCOPE_userreg-write")
                 .anyRequest()
                 .authenticated()
             )

@@ -1,0 +1,120 @@
+// const username = await HelloEndpoint.checkUser();
+  // if ("anonymousUser" === username) {
+  //   console.log("You are an anonymous user");
+  // } else {
+  //   console.log("Your username is: " + username);
+  // }
+
+  const [form, setForm] = useState({
+    first_name: "",
+    last_name: "",
+    email: ""
+  });
+
+  const handelChange = (e: { target: { name: any; value: any; }; }) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const [items, setItems] = useState<User[]>([]);
+
+  useEffect(() => {
+    const getAllUsers = async () => {
+        await UserController.findAll()
+            .then(setItems);
+    }
+    getAllUsers();
+  }, []);
+
+  async function addUser() {
+      console.log(form.first_name + " " + form.last_name + " " + form);
+      console.log(form.email);
+      const saved = await UserController.createUser(form);
+      if(saved){
+        setItems([...items, saved]);
+      }
+  };
+
+  return (
+    <form className="flex flex-col gap-y-2">
+      <TextField className="gap-s"
+        label="First name"
+        name="first_name"
+        onChange={handelChange}
+        placeholder="First Name"
+        required
+        minlength={2}
+        errorMessage="Firstname has to be a least 2 characters"
+      />
+      <TextField className="gap-s"
+        label="Last name"
+        name="last_name"
+        onChange={handelChange}
+        placeholder="Last Name"
+        required
+        minlength={2}
+        errorMessage="Lastname has to be a least 2 characters"
+      />
+      <EmailField className="gap-s"
+        label="E-Mail"
+        name="email"
+        onChange={handelChange}
+        placeholder="E-Mail"
+        required
+        errorMessage="Enter a valid email address"
+      />
+      <Button theme="primary" onClick={addUser}>
+        Add
+      </Button>
+      <Grid className="flex-grow" items={items} allRowsVisible>
+        <GridColumn header="First name" path="first_name"></GridColumn>
+        <GridColumn header="Last name" path="last_name"></GridColumn>
+        <GridColumn header="E-Mail" path="email" autoWidth></GridColumn>
+      </Grid>
+    </form>
+  );
+
+
+  const { model, field } = useForm(UserModel);
+
+  
+
+  
+
+  const [items, setItems] = useState<User[] | undefined>([]);
+  //const [items, setItems] = useState<User[]>([]);
+  const [username, setUsername] = useState<String | undefined>("Username is unknown!");
+
+  useEffect(() => {
+    const getAllUsers = async () => {
+        //await UserController.findAll().then(setItems);
+        await UserController.findAll().then((data) => setItems(data));
+    }
+    getAllUsers();
+
+    (async () => {
+      setUsername(await Utillities.checkUser());
+    });
+    console.log(username);
+  }, []);
+
+  async function addUser() {
+    const saved = await UserController.createUser(form);
+    if(saved){
+      //setItems([...items, saved]);
+    }
+  };
+
+  // function handleSubmit(event: FormEvent<HTMLFormElement>): void {
+  //   event.preventDefault();
+  //   //[e.target.name]: e.target.value
+  //   //event.target.first_name.value = "";
+  // }
+
+  //<form className="flex flex-col gap-y-2" onSubmit={handleSubmit}>
+
+
+
+className="gap-s"

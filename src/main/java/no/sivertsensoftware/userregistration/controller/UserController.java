@@ -16,10 +16,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import dev.hilla.BrowserCallable;
+import jakarta.annotation.security.PermitAll;
 import no.sivertsensoftware.userregistration.model.User;
 import no.sivertsensoftware.userregistration.repository.UserRepository;
 import no.sivertsensoftware.userregistration.service.UserService;
 
+@BrowserCallable
 @RestController
 @RequestMapping("/")
 public class UserController {
@@ -32,17 +35,9 @@ public class UserController {
         this.userService = userService;
     }
 
+    @PermitAll
     @GetMapping("/api/users")
-    public Iterable<User> findAll() { // Principal principal
-
-        // JwtAuthenticationToken token = (JwtAuthenticationToken) principal;
-        // String userName = (String) token.getTokenAttributes().get("name");
-        // String userName = principal.getName();
-        // String userEmail = (String) token.getTokenAttributes().get("email");
-        // String userEmail = principal.toString();
-
-        // System.out.println(ResponseEntity.ok("\nHello Admin \nUser Name : " +
-        // userName + "\nUser Email : " + userEmail));
+    public Iterable<User> findAll() {
 
         return userService.findAll();
     }
@@ -64,16 +59,20 @@ public class UserController {
         return userService.findById(id);
     }
 
+    //@RolesAllowed("SCOPE_userreg-write")
+    @PermitAll
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/api/users")
-    public void createUser(@RequestBody User user) {
-        userService.createUser(user);
+    public User createUser(@RequestBody User user) {
+        User saved = userService.createUser(user);
+        return saved;
     }
 
+    @PermitAll
     @Transactional
     @DeleteMapping("/api/users/{id}")
-    public void deleteById(@PathVariable("id") Long id) {
-        userRepository.deleteById(id);
+    public boolean deleteById(@PathVariable("id") Long id) {
+        return userService.deleteById(id);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
