@@ -32,13 +32,20 @@ public class UserService {
         return userRepository.findByLastname(last_name);
     }
 
-    public void createUser(User user) {
-        userRepository.save(user);
+    public User createUser(User user) {
+        User saved = userRepository.save(user);
+        return saved;
     }
 
     public void updateUser(Long id, User user) {
         userRepository.updateUser(id, user.getFirst_name(), user.getLast_name(), user.getEmail());
     }
+     public boolean deleteById(Long id){
+
+        Boolean deleted = userRepository.deleteByLongId(id);
+        return deleted;
+
+     }
 
     public boolean existsById(Long id) {
         return userRepository.existsById(id);

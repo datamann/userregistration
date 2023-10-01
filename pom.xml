@@ -5,41 +5,33 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.3</version>
+		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>no.sivertsensoftware</groupId>
 	<artifactId>userregistration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>userregistration</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot, Hilla and Open Policy Agent</description>
+	
 	<properties>
 		<java.version>17</java.version>
+		<hilla.version>2.2.0</hilla.version>
 	</properties>
-
-	<dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.keycloak.bom</groupId>
-                <artifactId>keycloak-adapter-bom</artifactId>
-                <version>19.0.2</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
 	<dependencies>
 		<!-- <dependency>
-			<groupId>javax.xml.bind</groupId>
-			<artifactId>jaxb-api</artifactId>
-			<version>2.3.1</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
 		</dependency> -->
-        <!-- <dependency>
-            <groupId>org.parttio</groupId>
-            <artifactId>line-awesome</artifactId>
-            <version>1.1.0</version>
-        </dependency> -->
+
+		<dependency>
+			<groupId>dev.hilla</groupId>
+			<artifactId>hilla-react-spring-boot-starter</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -110,32 +102,86 @@
 			<artifactId>spring-security-config</artifactId>
 		</dependency>
 
-		<dependency>
+		<!-- Will prevent hilla to work !!!-->
+		<!-- <dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.0.2</version>
-		</dependency>
-
-		<!-- <dependency>
-            <groupId>wsdl4j</groupId>
-            <artifactId>wsdl4j</artifactId>
-            <version>1.6.3</version>
-        </dependency> -->
+		</dependency> -->
  </dependencies>
+
+ <dependencyManagement>
+        <dependencies>
+			<dependency>
+				<groupId>dev.hilla</groupId>
+				<artifactId>hilla-bom</artifactId>
+				<version>${hilla.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+            <dependency>
+                <groupId>org.keycloak.bom</groupId>
+                <artifactId>keycloak-adapter-bom</artifactId>
+                <version>19.0.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
  
 	<build>
+	<pluginManagement>
 		<plugins>
+			<plugin>
+				<groupId>dev.hilla</groupId>
+				<artifactId>hilla-maven-plugin</artifactId>
+				<version>${hilla.version}</version>
+				<executions>
+				<execution>
+					<id>frontend</id>
+					<goals>
+					<goal>prepare-frontend</goal>
+					</goals>
+				</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-                    <jvmArguments>-Xlint:-unchecked -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5059</jvmArguments>
+				<!-- <configuration>
+                    <jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5059</jvmArguments>
                     <wait>500</wait>
                     <maxAttempts>240</maxAttempts>
-                </configuration>
+                </configuration> -->
 			</plugin>
 		</plugins>
+	</pluginManagement>
 	</build>
+	
 	 <profiles>
+	 	<profile>
+		<id>production</id>
+		<build>
+			<plugins>
+			<plugin>
+				<groupId>dev.hilla</groupId>
+				<artifactId>hilla-maven-plugin</artifactId>
+				<version>${hilla.version}</version>
+				<executions>
+				<execution>
+					<id>frontend</id>
+					<phase>compile</phase>
+					<goals>
+					<goal>build-frontend</goal>
+					</goals>
+					<configuration>
+					<productionMode>true</productionMode>
+					</configuration>
+				</execution>
+				</executions>
+			</plugin>
+			</plugins>
+		</build>
+		</profile>
     </profiles>
 </project>
