@@ -38,3 +38,4 @@ pgadmin/
 postgresql/
 opa_policies/
 keycloak/
+node_modules

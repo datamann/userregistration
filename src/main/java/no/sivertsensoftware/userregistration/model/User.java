@@ -4,15 +4,32 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.helger.commons.annotation.Nonempty;
+
+import io.micrometer.common.lang.NonNull;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
 
 @Table("usertbl")
 public final class User {
 
     @Id
-    @JsonIgnore
+    //@JsonIgnore
     private Long id;
+    
+    @NonNull
+    @Nonempty
+    @Size(min = 2, max = 50, message = "First name must be between 2 and 50 characters")
     private String first_name;
+
+    @NonNull
+    @Nonempty
+    @Size(min = 2, max = 50, message = "Last name must be between 2 and 50 characters")
     private String last_name;
+
+    @NonNull
+    @Nonempty
+    @Email
     private String email;
 
     public User(Long id, String first_name, String last_name, String email) {

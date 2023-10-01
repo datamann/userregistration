@@ -11,6 +11,10 @@ import no.sivertsensoftware.userregistration.model.User;
 
 public interface UserRepository extends CrudRepository<User, Long> {
     
+    @Modifying
+    @Query("Delete FROM usertbl WHERE id = :id")
+    boolean deleteByLongId(@Param("id") Long id);
+
     @Query("SELECT * FROM usertbl WHERE email = :email")
     List<User> findByEmail(String email);
 
