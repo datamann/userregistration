@@ -1,32 +1,42 @@
 package no.sivertsensoftware.userregistration.config;
 
 import static org.springframework.security.config.Customizer.withDefaults;
+
+import java.util.HashSet;
+import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.authority.mapping.GrantedAuthoritiesMapper;
 import org.springframework.security.oauth2.client.oidc.web.logout.OidcClientInitiatedLogoutSuccessHandler;
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
+import org.springframework.security.oauth2.core.ClaimAccessor;
+import org.springframework.security.oauth2.core.oidc.user.OidcUserAuthority;
+import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
+import org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.security.web.servlet.util.matcher.MvcRequestMatcher;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
+import org.springframework.security.config.Customizer;
 
 @Configuration
-//@EnableWebSecurity
+@EnableWebSecurity
 @EnableMethodSecurity
-//@EnableWebMvc
 public class SecurityConfig {
+
+    public static final String ADMIN = "ADMIN";
+    public static final String USER = "USERS";
 
     @Autowired
 	private ClientRegistrationRepository clientRegistrationRepository;
-    private final JwtAuthConverter jwtAuthConverter;
-
-    public SecurityConfig(JwtAuthConverter jwtAuthConverter) {
-        this.jwtAuthConverter = jwtAuthConverter;
-    }
 
     @Bean
     MvcRequestMatcher.Builder mvc(HandlerMappingIntrospector introspector) {
@@ -40,19 +50,17 @@ public class SecurityConfig {
             .csrf(cust -> cust.disable())
             .cors(cors -> cors.disable())
             .authorizeHttpRequests(authorizeRequests -> authorizeRequests
-                .requestMatchers(mvc.pattern(HttpMethod.GET, "/**")).hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
-                .requestMatchers(mvc.pattern(HttpMethod.GET, "/login/oauth2/code/**")).hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
-                .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
-                .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-write")
-                .requestMatchers(mvc.pattern(HttpMethod.PUT, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-write")
-                .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/users/**")).hasAnyAuthority("SCOPE_userreg-write")
+                .requestMatchers(mvc.pattern(HttpMethod.GET, "/**")).hasAnyRole(USER,ADMIN)
+                .requestMatchers(mvc.pattern(HttpMethod.GET, "/login/oauth2/code/**")).hasAnyRole(USER,ADMIN)
+                .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/users/**")).hasAnyRole(USER,ADMIN)
+                .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/users/**")).hasRole(ADMIN)
+                .requestMatchers(mvc.pattern(HttpMethod.PUT, "/api/users/**")).hasRole(ADMIN)
+                .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/users/**")).hasRole(ADMIN)
                 .anyRequest()
                 .authenticated()
             )
             .oauth2Login(withDefaults())
-            .oauth2ResourceServer(oauth2 -> oauth2.jwt(
-                jwt -> jwt.jwtAuthenticationConverter(jwtAuthConverter)
-            ))
+            .oauth2ResourceServer((oauth2) -> oauth2.jwt(Customizer.withDefaults()))
             .logout(logout -> logout
 				.logoutSuccessHandler(oidcLogoutSuccessHandler())
 			);
@@ -62,13 +70,47 @@ public class SecurityConfig {
     private LogoutSuccessHandler oidcLogoutSuccessHandler() {
 		OidcClientInitiatedLogoutSuccessHandler oidcLogoutSuccessHandler =
 				new OidcClientInitiatedLogoutSuccessHandler(this.clientRegistrationRepository);
-
-		// Sets the location that the End-User's User Agent will be redirected to
-		// after the logout has been performed at the Provider
 		oidcLogoutSuccessHandler.setPostLogoutRedirectUri("{baseUrl}");
-
 		return oidcLogoutSuccessHandler;
 	}
+
+    /*
+     * Scope to Roles converter for oauth2Login. User Realm Role -> Token Claim Name changed to "realm_access\.roles", Access Token Claim enabled.
+     */
+    @Bean
+    public JwtAuthenticationConverter jwtAuthenticationConverter() {
+
+        var claimName = "realm_access.roles";
+        var preFix = "ROLE_";
+
+        final JwtGrantedAuthoritiesConverter grantedAuthoritiesConverter = new JwtGrantedAuthoritiesConverter();
+        grantedAuthoritiesConverter.setAuthoritiesClaimName(claimName);
+        grantedAuthoritiesConverter.setAuthorityPrefix(preFix);
+
+        final JwtAuthenticationConverter jwtAuthenticationConverter = new JwtAuthenticationConverter();
+        jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(grantedAuthoritiesConverter);
+        return jwtAuthenticationConverter;
+    }
+
+    /*
+     * Scope to Roles converter for oauth2ResourceServer. User Realm Role -> Token Claim Name changed to "realm_access\.roles", UserInfo claim enabled
+     */
+    @Bean
+    GrantedAuthoritiesMapper userAuthoritiesMapperForKeycloak() {   
+
+        return authorities -> {
+            Set<GrantedAuthority> mappedAuthorities = new HashSet<>();
+            var authority = authorities.iterator().next();
+            if (authority instanceof OidcUserAuthority oidcUserAuthority) {
+                var userInfo = oidcUserAuthority.getUserInfo();
+                if (userInfo.hasClaim("realm_access.roles")) {
+                    var realmAccess = ((ClaimAccessor) userInfo).getClaimAsStringList("realm_access.roles");
+                    mappedAuthorities.addAll(realmAccess.stream().map(role -> new SimpleGrantedAuthority("ROLE_" + role.toUpperCase())).toList());
+                }
+            }
+            return mappedAuthorities;
+        };
+    }
 
     /*
      * Original Security Filter Chain

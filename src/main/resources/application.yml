@@ -33,7 +33,7 @@ spring:
     #    oauth2:
     #      resourceserver:
     #        jwt:
-    #          issuer-uri: http://localhost:8080/realms/master
+    #          issuer-uri: http://localhost:8080/realms/DNB
     #          token-duration: 1D
     #          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
 
