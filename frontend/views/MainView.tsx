@@ -13,6 +13,7 @@ import UserModel from "Frontend/generated/no/sivertsensoftware/userregistration/
 export default function MainView() {
 
   const [items, setItems] = useState<User[]>();
+  const [isadmin, setIsAdmin] = useState<boolean>();
 
   useEffect(() => {
     const getAllUsers = async () => {
@@ -20,7 +21,12 @@ export default function MainView() {
       setItems(result);
     };
     getAllUsers();
+    isAdmin();
   }, [setItems]);
+
+  async function isAdmin() {
+    setIsAdmin(await UserController.isAdmin().catch(() => false));
+  }
 
   async function createUser(user: User) {
     await UserController.createUser(user);
@@ -36,9 +42,7 @@ export default function MainView() {
     function userNotCreated() {
       alert('User NOT created!');
     }
-
     userCreated.then(handleReplyCreateUser,userNotCreated);
-
   };
 
   const { model, field, read, submit } = useForm(UserModel, {
@@ -73,31 +77,30 @@ export default function MainView() {
       <form className="flex flex-col gap-y-2">
       <TextField label="First name" {...field(model.first_name)}
         name="first_name"
-        //onChange={handelChange}
         placeholder="First name"
         autocomplete="given-name"
-        >
+        disabled={!isadmin}>
         <Tooltip slot="tooltip" text="Enter first name!" />
       </TextField>
       
       <TextField label="Last name" {...field(model.last_name)}
         name="last_name"
-        //onChange={handelChange}
         placeholder="Last name"
-        autocomplete="family-name">
+        autocomplete="family-name"
+        disabled={!isadmin}>
         <Tooltip slot="tooltip" text="Enter last name!" />
         </TextField>
 
       <EmailField className="gap-s" {...field(model.email)}
         label="E-Mail"
         name="email"
-        //onChange={handelChange}
         placeholder="E-Mail"
-        autocomplete="on">
+        autocomplete="on"
+        disabled={!isadmin}>
         <Tooltip slot="tooltip" text="Enter a valid email address!" />
       </EmailField>
 
-      <Button theme="primary" onClick={submit}>
+      <Button disabled={!isadmin} theme="primary" onClick={submit}>
       <Tooltip slot="tooltip" text="Click, too add record!" />
         Submit
       </Button>
@@ -107,7 +110,7 @@ export default function MainView() {
         <GridColumn header="First name" path="first_name" autoWidth></GridColumn>
         <GridColumn header="Last name" path="last_name" autoWidth></GridColumn>
         <GridColumn header="E-Mail" path="email" autoWidth></GridColumn>
-        <GridColumn header="Actions" path="actions" autoWidth className="background" renderer={({ item: User }) => (<Button theme="primary" onClick={(item) => { deleteSelectedUser(User.id, User); }}>Delete</Button>)}></GridColumn>
+        <GridColumn header="Actions" path="actions" autoWidth className="background" renderer={({ item: User }) => (<Button disabled={!isadmin} theme="primary" onClick={(item) => { deleteSelectedUser(User.id, User); }}>Delete</Button>)}></GridColumn>
       </Grid>
     </form>
     </>

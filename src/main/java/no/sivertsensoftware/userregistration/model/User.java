@@ -2,8 +2,6 @@ package no.sivertsensoftware.userregistration.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.helger.commons.annotation.Nonempty;
 
 import io.micrometer.common.lang.NonNull;
