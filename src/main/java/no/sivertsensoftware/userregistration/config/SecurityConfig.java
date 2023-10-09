@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -111,46 +110,4 @@ public class SecurityConfig {
             return mappedAuthorities;
         };
     }
-
-    /*
-     * Original Security Filter Chain
-     */
-    // @Bean
-    // SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-
-    //     http
-    //             .csrf(cust -> cust.disable())
-    //             .cors(cors -> cors.disable())
-    //             .sessionManagement((session) ->
-    //                 session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-    //             .authorizeHttpRequests(authorizeRequests -> authorizeRequests
-    //                 .requestMatchers(HttpMethod.GET,"/api/users/**").hasAnyAuthority("SCOPE_userreg-read","SCOPE_userreg-write")
-    //                 .requestMatchers(HttpMethod.POST,"/api/users/**").hasAuthority("SCOPE_userreg-write")
-    //                 .requestMatchers(HttpMethod.PUT,"/api/users/**").hasAuthority("SCOPE_userreg-write")
-    //                 .requestMatchers(HttpMethod.DELETE,"/api/users/**").hasAuthority("SCOPE_userreg-write")
-    //                 //.requestMatchers("/login").permitAll()
-    //                 //.requestMatchers("/logout").permitAll()
-    //                 //.requestMatchers("/oauth2").permitAll()
-    //                 .anyRequest()
-    //                 .authenticated()
-    //             )
-    //             //.oauth2Login(withDefaults())
-    //             // .logout((logout) ->
-    //             //     logout.deleteCookies("remove")
-    //             //     .invalidateHttpSession(false)
-    //             //     .logoutUrl("/logout")
-    //             //     .logoutSuccessUrl("/")
-    //             //     .addLogoutHandler(keycloakLogoutHandler)
-    //             // )
-    //             .oauth2ResourceServer(oauth2 -> oauth2.jwt(
-    //                     jwt -> jwt.jwtAuthenticationConverter(jwtAuthConverter)
-    //             ));
-    //     return http.build();
-    // }
-
-    // @Bean
-    // public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
-    //     return http.getSharedObject(AuthenticationManagerBuilder.class)
-    //         .build();
-    // }
 }
