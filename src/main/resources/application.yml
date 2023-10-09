@@ -6,9 +6,6 @@ management:
     web:
       exposure:
         include: '*'
-  # info:
-  #   env:
-  #     enabled: true
 logging:
   level:
     org:
@@ -19,30 +16,13 @@ spring:
         active: default
     datasource:
           driver-class-name: org.postgresql.Driver
-    #     username: ${PROD_DB_USERNAME}
           username: postgres
-    #     password: ${PROD_DB_PASSWORD}
           password: password
           name: userreg
-    #     url: jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}
           url: jdbc:postgresql://localhost:5432/userreg?createDatabaseIfNotExist=true
     sql:
       init:
         mode: always # you won't do this in prod, I'm just doing this for demo purposes
-    # security:
-    #    oauth2:
-    #      resourceserver:
-    #        jwt:
-    #          issuer-uri: http://localhost:8080/realms/DNB
-    #          token-duration: 1D
-    #          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
-
-    # jwt:
-    #   auth:
-    #     converter:
-    #       resource-id: userregistration
-    #       principal-attribute: preferred_username
-
 info:
   application:
     name: User Registration
