@@ -24,8 +24,13 @@ Versions:
 
 ### Installing
 
-* 
-* 
+* Look in file docker-compose.yml for Docker services and ports!
+* To prevent conflict with "localhost" names and services, you might want to edit your localhost file and give e.g. keycloak a hostname e.g. "127.0.0.1 mykeycloak".
+* After starting docker containers the first time, log into keycloak "http://mykeycloak:8080/admin/master/console/"
+* You don't have to but I recommend that you create a new Keycloak realm.
+* In the new realm, start by creating a Keycloak client. You will need to change clientID and clientSecret in the Spring Boot application properties file.
+* Create Keycloak users and realm roles.
+* Goto (In keycloak): Clients -> "client id" (Newly created client from the step above) -> Click Tab "Client scopes" -> Click on "<client id>-dedicated" -> Click "Add Mapper" -> From predefined mappers -> Select "realm roles", Click "ADD" -> Then click "realm roles" -> In "Token claim name" add: "realm_access\.roles" -> Disable "Add to ID token", Enable "Add to access token" and "Add to userinfo".
 
 ### Executing program
 
