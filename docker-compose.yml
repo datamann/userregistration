@@ -53,7 +53,7 @@ services:
       - "8181:8181"
     expose:
       - 8181
-    command: run --server --log-level debug /opa_policies # 'data.dnb.greeting'
+    command: run --server -w --log-level debug /opa_policies # 'data.dnb.greeting'
     volumes:
       - ./opa_policies:/opa_policies
     networks:
