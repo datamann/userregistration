@@ -1,6 +1,9 @@
 server:
   port : 8180
-
+app:
+  opa:
+    authz:
+      url: http://localhost:8181/v1/data/
 management:
   endpoints:
     web:
@@ -8,19 +11,29 @@ management:
         include: '*'
 logging:
   level:
+    root: INFO
     org:
       springframework:
-        security: TRACE
+        security: DEBUG
+        web: DEBUG
 spring:
-    profiles:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: full
+  profiles:
         active: default
-    datasource:
+  datasource:
           driver-class-name: org.postgresql.Driver
           username: postgres
           password: password
           name: userreg
           url: jdbc:postgresql://localhost:5432/userreg?createDatabaseIfNotExist=true
-    sql:
+  sql:
       init:
         mode: always # you won't do this in prod, I'm just doing this for demo purposes
 info:

@@ -1,0 +1,144 @@
+curl -X PUT --data-binary @policy.rego  
+
+curl --location http://localhost:8181/v1/data/dnb.userregistration.auth.account -X POST --data-binary @./policy.rego
+
+curl -X POST --data-binary @./data.json 'http://localhost:8181/v1/data/dnb/userregistration/auth' -H 'Content-Type: application/json'
+
+
+
+
+curl --location --request POST 'http://localhost:8181/v1/data/dnb/userregistration/auth' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "input": {
+        "authorities": ["ROLE_ADMIN"],
+        "headers": {
+            "Accept": "application/json"
+        }
+    }
+}'
+
+curl http://localhost:8181/v1/policies
+
+
+
+
+curl --location 'http://localhost:8181/v1/data/httpapi/authz' \
+--header 'Content-Type: application/json' \
+--data '{
+    "input": {
+        "user": "alice",
+        "path": ["finance", "salary", "alice"],
+        "method": "GET"
+    }
+}'
+
+
+
+
+Granted Authorities=[ROLE_USERS, ROLE_ADMIN, ROLE_UMA_AUTHORIZATION, ROLE_OFFLINE_ACCESS, ROLE_DEFAULT-ROLES-DNB]
+
+./opa eval --data ./policy.rego --input ./data.json data.policy.dnb.userregistration.auth
+
+
+
+#claims := payload {
+claims = {"valid": valid, "payload": payload} {
+	io.jwt.verify_hs256(bearer_token, "ynXVukZglbRlfSLCxeFZk0RjYOmUWsUc")
+	
+    #	[header, payload, signature]
+	#[_, payload, _] := io.jwt.decode(bearer_token)
+    [valid, _, payload] := io.jwt.decode_verify(encoded, {"bearer_token": "ynXVukZglbRlfSLCxeFZk0RjYOmUWsUc"})
+}
+
+bearer_token := t {
+	v := input.authorization
+	startswith(v, "Bearer ")
+	t := substring(v, count("Bearer "), -1)
+}
+
+# token = {"valid": valid, "payload": payload} {
+#     print(input.authorization)
+#     [_, encoded] := split(input.authorization, " ")
+#     [valid, _, payload] := io.jwt.decode_verify(encoded, {"bearer_token": "ynXVukZglbRlfSLCxeFZk0RjYOmUWsUc"})
+# }
+
+
+
+
+# Helper JWT Functions
+bearer_token := t {
+ t := input.authorization
+}
+
+token = {"valid": valid, "payload": payload} {
+    print(input.authorization)
+    [_, encoded] := split(input.authorization, " ")
+    [valid, _, payload] := io.jwt.decode_verify(encoded, {"bearer_token": "ynXVukZglbRlfSLCxeFZk0RjYOmUWsUc"})
+}
+
+allow {
+    is_token_valid
+}
+
+is_token_valid {
+    print("-------- Token valid: ", token.valid)
+  token.valid
+  now := time.now_ns() / 1000000000
+  token.payload.nbf <= now
+  now < token.payload.exp
+  print("-------- Token EXP: ", token.payload.exp)
+}
+
+
+
+
+ #"authorities": "ROLE_ADMIN",
+        #"http_method": "GET",
+
+
+import future.keywords.contains
+import future.keywords.if
+import future.keywords.in
+
+
+# Decode the authorization token to get a role and permission
+# token = {"payload": payload} {
+#  [_, payload, _] := io.jwt.decode(bearer_token)
+# }
+
+# bearer_token := t {
+# 	# Bearer tokens are contained inside of the HTTP Authorization header. This rule
+# 	# parses the header and extracts the Bearer token value. If no Bearer token is
+# 	# provided, the `bearer_token` value is undefined.
+# 	v := input.authorization
+# 	startswith(v, "Bearer ")
+# 	t := substring(v, count("Bearer "), -1)
+# }
+
+# token := payload {
+#     io.jwt.verify_hs256(bearer_token, "ynXVukZglbRlfSLCxeFZk0RjYOmUWsUc")
+#     [_, payload, _] := io.jwt.decode(bearer_token)
+# }
+
+
+
+
+#is_get
+    #match_claims
+    #input.authorities = "ROLE_ADMIN"
+    #authorization
+
+is_get {
+	input.http_method == "GET"
+}
+
+match_claims {
+    print("------------ Scope: ", input.payload.scope)
+    input.token.scope = "openid"
+}
+
+authorization {
+    print("----------- preferred_username: ", input.token.payload.preferred_username)
+    print("----------- Token Payload: ", token.payload)
+}

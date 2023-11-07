@@ -1,0 +1,419 @@
+{
+        "input": {
+          "path": [
+            ""
+          ],
+          "method": "GET",
+          "payload": null,
+          "user": {
+            "authorities": [
+              {
+                "authority": "OIDC_USER",
+                "attributes": {
+                  "at_hash": "1RWlz7Ya-uFlusLpRK8Z5A",
+                  "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                  "email_verified": false,
+                  "hr_data": [
+                    "parental leave"
+                  ],
+                  "authorizations": [
+                    "dnb.userregistration.write",
+                    "dnb.partymaster.write"
+                  ],
+                  "iss": "http://mykeycloak:8080/realms/DNB",
+                  "typ": "ID",
+                  "preferred_username": "sbsivertsen",
+                  "given_name": "",
+                  "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+                  "sid": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+                  "aud": [
+                    "userregistration"
+                  ],
+                  "acr": "1",
+                  "realm_access": {
+                    "roles": [
+                      "ADMIN",
+                      "USERS"
+                    ]
+                  },
+                  "azp": "userregistration",
+                  "realm_access.roles": [
+                    "ADMIN",
+                    "USERS"
+                  ],
+                  "auth_time": "2023-11-06T21:07:57Z",
+                  "exp": "2023-11-07T05:07:57Z",
+                  "session_state": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+                  "family_name": "",
+                  "iat": "2023-11-06T21:07:57Z",
+                  "jti": "52f50dd9-fb57-4925-a747-ce14b8cae4e9"
+                },
+                "idToken": {
+                  "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE2OTkzMzM2NzcsImlhdCI6MTY5OTMwNDg3NywiYXV0aF90aW1lIjoxNjk5MzA0ODc3LCJqdGkiOiI1MmY1MGRkOS1mYjU3LTQ5MjUtYTc0Ny1jZTE0YjhjYWU0ZTkiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiZjVhYzYzODctYzczOC00MGE4LWEzY2YtZDAwYjczZGJmNWIyIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJMOElkc3B5S20xY3RGQnRmcWY5NWI1eHQ4YTZBOGhkczVHWjNfTnJMYnJrIiwic2Vzc2lvbl9zdGF0ZSI6Ijg4MDBjY2ZmLTkzZTUtNGEzNi04ZmI2LTBmMzc1ZjI0ZTE5ZSIsImF0X2hhc2giOiIxUldsejdZYS11Rmx1c0xwUks4WjVBIiwiYWNyIjoiMSIsInNpZCI6Ijg4MDBjY2ZmLTkzZTUtNGEzNi04ZmI2LTBmMzc1ZjI0ZTE5ZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2JzaXZlcnRzZW4iLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIifQ.ACNyDtdE2Lbp5sNh3x0DUrCXeO0gJU8htqlSP9X0vWjJH-9ERcHjtBJoTA5nCNQ7WFwWx-d2WeigLhMT8deuidaZzbVC33UUdSxkrnMnM9utUB6v7gkTtBsU23R4dcxpIJnaFjULlI7VLevhLDim-9yZPw9BQjOixgHgXEprjW-s5H_8yT6-KfcklGOFjoL4K5H_QpEUbulPqtjNEzRV6WtgIzmXyiHPfpAI6N66GGhJPjFzaT7c8lZebKlMw4tx0z_5UhkhPmx3lvB-cCFBLVaPMqpi6KdiJgkHvgTYZiQHYDqcaA3Rjkj_m8UDva4Lyn3oYu7K7hw9xizKhHw9gQ",
+                  "issuedAt": "2023-11-06T21:07:57Z",
+                  "expiresAt": "2023-11-07T05:07:57Z",
+                  "claims": {
+                    "at_hash": "1RWlz7Ya-uFlusLpRK8Z5A",
+                    "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                    "email_verified": false,
+                    "iss": "http://mykeycloak:8080/realms/DNB",
+                    "typ": "ID",
+                    "preferred_username": "sbsivertsen",
+                    "given_name": "",
+                    "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+                    "sid": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+                    "aud": [
+                      "userregistration"
+                    ],
+                    "acr": "1",
+                    "azp": "userregistration",
+                    "auth_time": "2023-11-06T21:07:57Z",
+                    "exp": "2023-11-07T05:07:57Z",
+                    "session_state": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+                    "iat": "2023-11-06T21:07:57Z",
+                    "family_name": "",
+                    "jti": "52f50dd9-fb57-4925-a747-ce14b8cae4e9"
+                  },
+                  "issuer": "http://mykeycloak:8080/realms/DNB",
+                  "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                  "audience": [
+                    "userregistration"
+                  ],
+                  "authenticatedAt": "2023-11-06T21:07:57Z",
+                  "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+                  "authenticationContextClass": "1",
+                  "authenticationMethods": null,
+                  "authorizedParty": "userregistration",
+                  "accessTokenHash": "1RWlz7Ya-uFlusLpRK8Z5A",
+                  "authorizationCodeHash": null,
+                  "email": null,
+                  "givenName": "",
+                  "familyName": "",
+                  "middleName": null,
+                  "nickName": null,
+                  "preferredUsername": "sbsivertsen",
+                  "picture": null,
+                  "website": null,
+                  "emailVerified": false,
+                  "gender": null,
+                  "birthdate": null,
+                  "phoneNumber": null,
+                  "phoneNumberVerified": null,
+                  "updatedAt": null,
+                  "profile": null,
+                  "address": {
+                    "formatted": null,
+                    "streetAddress": null,
+                    "locality": null,
+                    "region": null,
+                    "postalCode": null,
+                    "country": null
+                  },
+                  "locale": null,
+                  "fullName": null,
+                  "zoneInfo": null
+                },
+                "userInfo": {
+                  "claims": {
+                    "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                    "email_verified": false,
+                    "realm_access": {
+                      "roles": [
+                        "ADMIN",
+                        "USERS"
+                      ]
+                    },
+                    "hr_data": [
+                      "parental leave"
+                    ],
+                    "realm_access.roles": [
+                      "ADMIN",
+                      "USERS"
+                    ],
+                    "authorizations": [
+                      "dnb.userregistration.write",
+                      "dnb.partymaster.write"
+                    ],
+                    "preferred_username": "sbsivertsen",
+                    "given_name": "",
+                    "family_name": ""
+                  },
+                  "email": null,
+                  "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                  "givenName": "",
+                  "familyName": "",
+                  "middleName": null,
+                  "nickName": null,
+                  "preferredUsername": "sbsivertsen",
+                  "picture": null,
+                  "website": null,
+                  "emailVerified": false,
+                  "gender": null,
+                  "birthdate": null,
+                  "phoneNumber": null,
+                  "phoneNumberVerified": null,
+                  "updatedAt": null,
+                  "profile": null,
+                  "address": {
+                    "formatted": null,
+                    "streetAddress": null,
+                    "locality": null,
+                    "region": null,
+                    "postalCode": null,
+                    "country": null
+                  },
+                  "locale": null,
+                  "fullName": null,
+                  "zoneInfo": null
+                }
+              },
+              {
+                "authority": "SCOPE_email"
+              },
+              {
+                "authority": "SCOPE_openid"
+              },
+              {
+                "authority": "SCOPE_profile"
+              }
+            ],
+            "attributes": {
+              "at_hash": "1RWlz7Ya-uFlusLpRK8Z5A",
+              "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "email_verified": false,
+              "hr_data": [
+                "parental leave"
+              ],
+              "authorizations": [
+                "dnb.userregistration.write",
+                "dnb.partymaster.write"
+              ],
+              "iss": "http://mykeycloak:8080/realms/DNB",
+              "typ": "ID",
+              "preferred_username": "sbsivertsen",
+              "given_name": "",
+              "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+              "sid": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+              "aud": [
+                "userregistration"
+              ],
+              "acr": "1",
+              "realm_access": {
+                "roles": [
+                  "ADMIN",
+                  "USERS"
+                ]
+              },
+              "azp": "userregistration",
+              "realm_access.roles": [
+                "ADMIN",
+                "USERS"
+              ],
+              "auth_time": "2023-11-06T21:07:57Z",
+              "exp": "2023-11-07T05:07:57Z",
+              "session_state": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+              "family_name": "",
+              "iat": "2023-11-06T21:07:57Z",
+              "jti": "52f50dd9-fb57-4925-a747-ce14b8cae4e9"
+            },
+            "idToken": {
+              "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE2OTkzMzM2NzcsImlhdCI6MTY5OTMwNDg3NywiYXV0aF90aW1lIjoxNjk5MzA0ODc3LCJqdGkiOiI1MmY1MGRkOS1mYjU3LTQ5MjUtYTc0Ny1jZTE0YjhjYWU0ZTkiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiZjVhYzYzODctYzczOC00MGE4LWEzY2YtZDAwYjczZGJmNWIyIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJMOElkc3B5S20xY3RGQnRmcWY5NWI1eHQ4YTZBOGhkczVHWjNfTnJMYnJrIiwic2Vzc2lvbl9zdGF0ZSI6Ijg4MDBjY2ZmLTkzZTUtNGEzNi04ZmI2LTBmMzc1ZjI0ZTE5ZSIsImF0X2hhc2giOiIxUldsejdZYS11Rmx1c0xwUks4WjVBIiwiYWNyIjoiMSIsInNpZCI6Ijg4MDBjY2ZmLTkzZTUtNGEzNi04ZmI2LTBmMzc1ZjI0ZTE5ZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2JzaXZlcnRzZW4iLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIifQ.ACNyDtdE2Lbp5sNh3x0DUrCXeO0gJU8htqlSP9X0vWjJH-9ERcHjtBJoTA5nCNQ7WFwWx-d2WeigLhMT8deuidaZzbVC33UUdSxkrnMnM9utUB6v7gkTtBsU23R4dcxpIJnaFjULlI7VLevhLDim-9yZPw9BQjOixgHgXEprjW-s5H_8yT6-KfcklGOFjoL4K5H_QpEUbulPqtjNEzRV6WtgIzmXyiHPfpAI6N66GGhJPjFzaT7c8lZebKlMw4tx0z_5UhkhPmx3lvB-cCFBLVaPMqpi6KdiJgkHvgTYZiQHYDqcaA3Rjkj_m8UDva4Lyn3oYu7K7hw9xizKhHw9gQ",
+              "issuedAt": "2023-11-06T21:07:57Z",
+              "expiresAt": "2023-11-07T05:07:57Z",
+              "claims": {
+                "at_hash": "1RWlz7Ya-uFlusLpRK8Z5A",
+                "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                "email_verified": false,
+                "iss": "http://mykeycloak:8080/realms/DNB",
+                "typ": "ID",
+                "preferred_username": "sbsivertsen",
+                "given_name": "",
+                "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+                "sid": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+                "aud": [
+                  "userregistration"
+                ],
+                "acr": "1",
+                "azp": "userregistration",
+                "auth_time": "2023-11-06T21:07:57Z",
+                "exp": "2023-11-07T05:07:57Z",
+                "session_state": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+                "iat": "2023-11-06T21:07:57Z",
+                "family_name": "",
+                "jti": "52f50dd9-fb57-4925-a747-ce14b8cae4e9"
+              },
+              "issuer": "http://mykeycloak:8080/realms/DNB",
+              "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "audience": [
+                "userregistration"
+              ],
+              "authenticatedAt": "2023-11-06T21:07:57Z",
+              "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+              "authenticationContextClass": "1",
+              "authenticationMethods": null,
+              "authorizedParty": "userregistration",
+              "accessTokenHash": "1RWlz7Ya-uFlusLpRK8Z5A",
+              "authorizationCodeHash": null,
+              "email": null,
+              "givenName": "",
+              "familyName": "",
+              "middleName": null,
+              "nickName": null,
+              "preferredUsername": "sbsivertsen",
+              "picture": null,
+              "website": null,
+              "emailVerified": false,
+              "gender": null,
+              "birthdate": null,
+              "phoneNumber": null,
+              "phoneNumberVerified": null,
+              "updatedAt": null,
+              "profile": null,
+              "address": {
+                "formatted": null,
+                "streetAddress": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "country": null
+              },
+              "locale": null,
+              "fullName": null,
+              "zoneInfo": null
+            },
+            "userInfo": {
+              "claims": {
+                "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                "email_verified": false,
+                "realm_access": {
+                  "roles": [
+                    "ADMIN",
+                    "USERS"
+                  ]
+                },
+                "hr_data": [
+                  "parental leave"
+                ],
+                "realm_access.roles": [
+                  "ADMIN",
+                  "USERS"
+                ],
+                "authorizations": [
+                  "dnb.userregistration.write",
+                  "dnb.partymaster.write"
+                ],
+                "preferred_username": "sbsivertsen",
+                "given_name": "",
+                "family_name": ""
+              },
+              "email": null,
+              "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "givenName": "",
+              "familyName": "",
+              "middleName": null,
+              "nickName": null,
+              "preferredUsername": "sbsivertsen",
+              "picture": null,
+              "website": null,
+              "emailVerified": false,
+              "gender": null,
+              "birthdate": null,
+              "phoneNumber": null,
+              "phoneNumberVerified": null,
+              "updatedAt": null,
+              "profile": null,
+              "address": {
+                "formatted": null,
+                "streetAddress": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "country": null
+              },
+              "locale": null,
+              "fullName": null,
+              "zoneInfo": null
+            },
+            "claims": {
+              "at_hash": "1RWlz7Ya-uFlusLpRK8Z5A",
+              "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "email_verified": false,
+              "hr_data": [
+                "parental leave"
+              ],
+              "authorizations": [
+                "dnb.userregistration.write",
+                "dnb.partymaster.write"
+              ],
+              "iss": "http://mykeycloak:8080/realms/DNB",
+              "typ": "ID",
+              "preferred_username": "sbsivertsen",
+              "given_name": "",
+              "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+              "sid": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+              "aud": [
+                "userregistration"
+              ],
+              "acr": "1",
+              "realm_access": {
+                "roles": [
+                  "ADMIN",
+                  "USERS"
+                ]
+              },
+              "azp": "userregistration",
+              "realm_access.roles": [
+                "ADMIN",
+                "USERS"
+              ],
+              "auth_time": "2023-11-06T21:07:57Z",
+              "exp": "2023-11-07T05:07:57Z",
+              "session_state": "8800ccff-93e5-4a36-8fb6-0f375f24e19e",
+              "family_name": "",
+              "iat": "2023-11-06T21:07:57Z",
+              "jti": "52f50dd9-fb57-4925-a747-ce14b8cae4e9"
+            },
+            "name": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+            "issuer": "http://mykeycloak:8080/realms/DNB",
+            "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+            "audience": [
+              "userregistration"
+            ],
+            "expiresAt": "2023-11-07T05:07:57Z",
+            "issuedAt": "2023-11-06T21:07:57Z",
+            "authenticatedAt": "2023-11-06T21:07:57Z",
+            "nonce": "L8IdspyKm1ctFBtfqf95b5xt8a6A8hds5GZ3_NrLbrk",
+            "authenticationContextClass": "1",
+            "authenticationMethods": null,
+            "authorizedParty": "userregistration",
+            "accessTokenHash": "1RWlz7Ya-uFlusLpRK8Z5A",
+            "authorizationCodeHash": null,
+            "email": null,
+            "givenName": "",
+            "familyName": "",
+            "middleName": null,
+            "nickName": null,
+            "preferredUsername": "sbsivertsen",
+            "picture": null,
+            "website": null,
+            "emailVerified": false,
+            "gender": null,
+            "birthdate": null,
+            "phoneNumber": null,
+            "phoneNumberVerified": null,
+            "updatedAt": null,
+            "profile": null,
+            "address": {
+              "formatted": null,
+              "streetAddress": null,
+              "locality": null,
+              "region": null,
+              "postalCode": null,
+              "country": null
+            },
+            "locale": null,
+            "fullName": null,
+            "zoneInfo": null
+          }
+        }
+      }
