@@ -3,7 +3,7 @@ server:
 app:
   opa:
     authz:
-      url: http://localhost:8181/v1/data/dnb/userregistration/auth
+      url: http://localhost:8181/v1/data/
 management:
   endpoints:
     web:

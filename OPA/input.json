@@ -1,0 +1,419 @@
+{
+    "input": {
+      "path": [
+        ""
+      ],
+      "method": "GET",
+      "payload": null,
+      "user": {
+        "authorities": [
+          {
+            "authority": "OIDC_USER",
+            "attributes": {
+              "at_hash": "jkgAGbvsdv-mT_tOOJDr6w",
+              "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "email_verified": false,
+              "hr_data": [
+                "parental leave"
+              ],
+              "authorizations": [
+                "dnb.userregistration.write",
+                "dnb.partymaster.write"
+              ],
+              "iss": "http://mykeycloak:8080/realms/DNB",
+              "typ": "ID",
+              "preferred_username": "sbsivertsen",
+              "given_name": "",
+              "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+              "sid": "e9caca6a-6aa7-4213-91db-00d546a70829",
+              "aud": [
+                "userregistration"
+              ],
+              "acr": "0",
+              "realm_access": {
+                "roles": [
+                  "ADMIN",
+                  "USERS"
+                ]
+              },
+              "azp": "userregistration",
+              "realm_access.roles": [
+                "ADMIN",
+                "USERS"
+              ],
+              "auth_time": "2023-11-06T14:44:22Z",
+              "exp": "2023-11-07T00:44:22Z",
+              "session_state": "e9caca6a-6aa7-4213-91db-00d546a70829",
+              "family_name": "",
+              "iat": "2023-11-06T20:12:26Z",
+              "jti": "6bd3e607-a0fa-41cc-9d34-b26d3b35eab2"
+            },
+            "idToken": {
+              "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE2OTkzMTc4NjIsImlhdCI6MTY5OTMwMTU0NiwiYXV0aF90aW1lIjoxNjk5MjgxODYyLCJqdGkiOiI2YmQzZTYwNy1hMGZhLTQxY2MtOWQzNC1iMjZkM2IzNWVhYjIiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiZjVhYzYzODctYzczOC00MGE4LWEzY2YtZDAwYjczZGJmNWIyIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJSbXdaelJzYWJmMUdYZFpTb2R0TDZPdHVEdXRDWDNaZ09HMnNzNWNhU1NVIiwic2Vzc2lvbl9zdGF0ZSI6ImU5Y2FjYTZhLTZhYTctNDIxMy05MWRiLTAwZDU0NmE3MDgyOSIsImF0X2hhc2giOiJqa2dBR2J2c2R2LW1UX3RPT0pEcjZ3IiwiYWNyIjoiMCIsInNpZCI6ImU5Y2FjYTZhLTZhYTctNDIxMy05MWRiLTAwZDU0NmE3MDgyOSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2JzaXZlcnRzZW4iLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIifQ.Z2icNyMZWXN2zcCE_2vvEnquq2XE_dc2cX7uYHj_RsgtuAQZpYQsFm5O2dny4_fpFph280WKMdpe-XRsjUGNa3LF8W_uVrgWt5x5M6nRTqtrZ88dyOwGs8puvO7faU1_yq0fITc8KXPceNlabaiAL0zBWOxyvH7h0bbkUmhKxT6wtNL_FfahvduqNvk3hFZBtCR-2GI4QCj2xUytGbN7_U_LiJTQtl_VPWzCbXvEcXbXoyh1JmoyX74cpHh3Y3CVFjbbKP2M31xWUBVFokDinsS2MPCUtWWV0LSc5i_PoO8zQxM-T7eyQdOIMOKzEVQ89ZVNmOhXYj5MoT7vmEmPXw",
+              "issuedAt": "2023-11-06T20:12:26Z",
+              "expiresAt": "2023-11-07T00:44:22Z",
+              "claims": {
+                "at_hash": "jkgAGbvsdv-mT_tOOJDr6w",
+                "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                "email_verified": false,
+                "iss": "http://mykeycloak:8080/realms/DNB",
+                "typ": "ID",
+                "preferred_username": "sbsivertsen",
+                "given_name": "",
+                "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+                "sid": "e9caca6a-6aa7-4213-91db-00d546a70829",
+                "aud": [
+                  "userregistration"
+                ],
+                "acr": "0",
+                "azp": "userregistration",
+                "auth_time": "2023-11-06T14:44:22Z",
+                "exp": "2023-11-07T00:44:22Z",
+                "session_state": "e9caca6a-6aa7-4213-91db-00d546a70829",
+                "iat": "2023-11-06T20:12:26Z",
+                "family_name": "",
+                "jti": "6bd3e607-a0fa-41cc-9d34-b26d3b35eab2"
+              },
+              "issuer": "http://mykeycloak:8080/realms/DNB",
+              "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "audience": [
+                "userregistration"
+              ],
+              "authenticatedAt": "2023-11-06T14:44:22Z",
+              "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+              "authenticationContextClass": "0",
+              "authenticationMethods": null,
+              "authorizedParty": "userregistration",
+              "accessTokenHash": "jkgAGbvsdv-mT_tOOJDr6w",
+              "authorizationCodeHash": null,
+              "email": null,
+              "givenName": "",
+              "familyName": "",
+              "middleName": null,
+              "nickName": null,
+              "preferredUsername": "sbsivertsen",
+              "picture": null,
+              "website": null,
+              "emailVerified": false,
+              "gender": null,
+              "birthdate": null,
+              "phoneNumber": null,
+              "phoneNumberVerified": null,
+              "updatedAt": null,
+              "profile": null,
+              "address": {
+                "formatted": null,
+                "streetAddress": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "country": null
+              },
+              "locale": null,
+              "fullName": null,
+              "zoneInfo": null
+            },
+            "userInfo": {
+              "claims": {
+                "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                "email_verified": false,
+                "realm_access": {
+                  "roles": [
+                    "ADMIN",
+                    "USERS"
+                  ]
+                },
+                "hr_data": [
+                  "parental leave"
+                ],
+                "realm_access.roles": [
+                  "ADMIN",
+                  "USERS"
+                ],
+                "authorizations": [
+                  "dnb.userregistration.write",
+                  "dnb.partymaster.write"
+                ],
+                "preferred_username": "sbsivertsen",
+                "given_name": "",
+                "family_name": ""
+              },
+              "email": null,
+              "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "givenName": "",
+              "familyName": "",
+              "middleName": null,
+              "nickName": null,
+              "preferredUsername": "sbsivertsen",
+              "picture": null,
+              "website": null,
+              "emailVerified": false,
+              "gender": null,
+              "birthdate": null,
+              "phoneNumber": null,
+              "phoneNumberVerified": null,
+              "updatedAt": null,
+              "profile": null,
+              "address": {
+                "formatted": null,
+                "streetAddress": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "country": null
+              },
+              "locale": null,
+              "fullName": null,
+              "zoneInfo": null
+            }
+          },
+          {
+            "authority": "SCOPE_email"
+          },
+          {
+            "authority": "SCOPE_openid"
+          },
+          {
+            "authority": "SCOPE_profile"
+          }
+        ],
+        "attributes": {
+          "at_hash": "jkgAGbvsdv-mT_tOOJDr6w",
+          "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+          "email_verified": false,
+          "hr_data": [
+            "parental leave"
+          ],
+          "authorizations": [
+            "dnb.userregistration.write",
+            "dnb.partymaster.write"
+          ],
+          "iss": "http://mykeycloak:8080/realms/DNB",
+          "typ": "ID",
+          "preferred_username": "sbsivertsen",
+          "given_name": "",
+          "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+          "sid": "e9caca6a-6aa7-4213-91db-00d546a70829",
+          "aud": [
+            "userregistration"
+          ],
+          "acr": "0",
+          "realm_access": {
+            "roles": [
+              "ADMIN",
+              "USERS"
+            ]
+          },
+          "azp": "userregistration",
+          "realm_access.roles": [
+            "ADMIN",
+            "USERS"
+          ],
+          "auth_time": "2023-11-06T14:44:22Z",
+          "exp": "2023-11-07T00:44:22Z",
+          "session_state": "e9caca6a-6aa7-4213-91db-00d546a70829",
+          "family_name": "",
+          "iat": "2023-11-06T20:12:26Z",
+          "jti": "6bd3e607-a0fa-41cc-9d34-b26d3b35eab2"
+        },
+        "idToken": {
+          "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE2OTkzMTc4NjIsImlhdCI6MTY5OTMwMTU0NiwiYXV0aF90aW1lIjoxNjk5MjgxODYyLCJqdGkiOiI2YmQzZTYwNy1hMGZhLTQxY2MtOWQzNC1iMjZkM2IzNWVhYjIiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiZjVhYzYzODctYzczOC00MGE4LWEzY2YtZDAwYjczZGJmNWIyIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJSbXdaelJzYWJmMUdYZFpTb2R0TDZPdHVEdXRDWDNaZ09HMnNzNWNhU1NVIiwic2Vzc2lvbl9zdGF0ZSI6ImU5Y2FjYTZhLTZhYTctNDIxMy05MWRiLTAwZDU0NmE3MDgyOSIsImF0X2hhc2giOiJqa2dBR2J2c2R2LW1UX3RPT0pEcjZ3IiwiYWNyIjoiMCIsInNpZCI6ImU5Y2FjYTZhLTZhYTctNDIxMy05MWRiLTAwZDU0NmE3MDgyOSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2JzaXZlcnRzZW4iLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIifQ.Z2icNyMZWXN2zcCE_2vvEnquq2XE_dc2cX7uYHj_RsgtuAQZpYQsFm5O2dny4_fpFph280WKMdpe-XRsjUGNa3LF8W_uVrgWt5x5M6nRTqtrZ88dyOwGs8puvO7faU1_yq0fITc8KXPceNlabaiAL0zBWOxyvH7h0bbkUmhKxT6wtNL_FfahvduqNvk3hFZBtCR-2GI4QCj2xUytGbN7_U_LiJTQtl_VPWzCbXvEcXbXoyh1JmoyX74cpHh3Y3CVFjbbKP2M31xWUBVFokDinsS2MPCUtWWV0LSc5i_PoO8zQxM-T7eyQdOIMOKzEVQ89ZVNmOhXYj5MoT7vmEmPXw",
+          "issuedAt": "2023-11-06T20:12:26Z",
+          "expiresAt": "2023-11-07T00:44:22Z",
+          "claims": {
+            "at_hash": "jkgAGbvsdv-mT_tOOJDr6w",
+            "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+            "email_verified": false,
+            "iss": "http://mykeycloak:8080/realms/DNB",
+            "typ": "ID",
+            "preferred_username": "sbsivertsen",
+            "given_name": "",
+            "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+            "sid": "e9caca6a-6aa7-4213-91db-00d546a70829",
+            "aud": [
+              "userregistration"
+            ],
+            "acr": "0",
+            "azp": "userregistration",
+            "auth_time": "2023-11-06T14:44:22Z",
+            "exp": "2023-11-07T00:44:22Z",
+            "session_state": "e9caca6a-6aa7-4213-91db-00d546a70829",
+            "iat": "2023-11-06T20:12:26Z",
+            "family_name": "",
+            "jti": "6bd3e607-a0fa-41cc-9d34-b26d3b35eab2"
+          },
+          "issuer": "http://mykeycloak:8080/realms/DNB",
+          "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+          "audience": [
+            "userregistration"
+          ],
+          "authenticatedAt": "2023-11-06T14:44:22Z",
+          "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+          "authenticationContextClass": "0",
+          "authenticationMethods": null,
+          "authorizedParty": "userregistration",
+          "accessTokenHash": "jkgAGbvsdv-mT_tOOJDr6w",
+          "authorizationCodeHash": null,
+          "email": null,
+          "givenName": "",
+          "familyName": "",
+          "middleName": null,
+          "nickName": null,
+          "preferredUsername": "sbsivertsen",
+          "picture": null,
+          "website": null,
+          "emailVerified": false,
+          "gender": null,
+          "birthdate": null,
+          "phoneNumber": null,
+          "phoneNumberVerified": null,
+          "updatedAt": null,
+          "profile": null,
+          "address": {
+            "formatted": null,
+            "streetAddress": null,
+            "locality": null,
+            "region": null,
+            "postalCode": null,
+            "country": null
+          },
+          "locale": null,
+          "fullName": null,
+          "zoneInfo": null
+        },
+        "userInfo": {
+          "claims": {
+            "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+            "email_verified": false,
+            "realm_access": {
+              "roles": [
+                "ADMIN",
+                "USERS"
+              ]
+            },
+            "hr_data": [
+              "parental leave"
+            ],
+            "realm_access.roles": [
+              "ADMIN",
+              "USERS"
+            ],
+            "authorizations": [
+              "dnb.userregistration.write",
+              "dnb.partymaster.write"
+            ],
+            "preferred_username": "sbsivertsen",
+            "given_name": "",
+            "family_name": ""
+          },
+          "email": null,
+          "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+          "givenName": "",
+          "familyName": "",
+          "middleName": null,
+          "nickName": null,
+          "preferredUsername": "sbsivertsen",
+          "picture": null,
+          "website": null,
+          "emailVerified": false,
+          "gender": null,
+          "birthdate": null,
+          "phoneNumber": null,
+          "phoneNumberVerified": null,
+          "updatedAt": null,
+          "profile": null,
+          "address": {
+            "formatted": null,
+            "streetAddress": null,
+            "locality": null,
+            "region": null,
+            "postalCode": null,
+            "country": null
+          },
+          "locale": null,
+          "fullName": null,
+          "zoneInfo": null
+        },
+        "claims": {
+          "at_hash": "jkgAGbvsdv-mT_tOOJDr6w",
+          "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+          "email_verified": false,
+          "hr_data": [
+            "parental leave"
+          ],
+          "authorizations": [
+            "dnb.userregistration.write",
+            "dnb.partymaster.write"
+          ],
+          "iss": "http://mykeycloak:8080/realms/DNB",
+          "typ": "ID",
+          "preferred_username": "sbsivertsen",
+          "given_name": "",
+          "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+          "sid": "e9caca6a-6aa7-4213-91db-00d546a70829",
+          "aud": [
+            "userregistration"
+          ],
+          "acr": "0",
+          "realm_access": {
+            "roles": [
+              "ADMIN",
+              "USERS"
+            ]
+          },
+          "azp": "userregistration",
+          "realm_access.roles": [
+            "ADMIN",
+            "USERS"
+          ],
+          "auth_time": "2023-11-06T14:44:22Z",
+          "exp": "2023-11-07T00:44:22Z",
+          "session_state": "e9caca6a-6aa7-4213-91db-00d546a70829",
+          "family_name": "",
+          "iat": "2023-11-06T20:12:26Z",
+          "jti": "6bd3e607-a0fa-41cc-9d34-b26d3b35eab2"
+        },
+        "name": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+        "issuer": "http://mykeycloak:8080/realms/DNB",
+        "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+        "audience": [
+          "userregistration"
+        ],
+        "expiresAt": "2023-11-07T00:44:22Z",
+        "issuedAt": "2023-11-06T20:12:26Z",
+        "authenticatedAt": "2023-11-06T14:44:22Z",
+        "nonce": "RmwZzRsabf1GXdZSodtL6OtuDutCX3ZgOG2ss5caSSU",
+        "authenticationContextClass": "0",
+        "authenticationMethods": null,
+        "authorizedParty": "userregistration",
+        "accessTokenHash": "jkgAGbvsdv-mT_tOOJDr6w",
+        "authorizationCodeHash": null,
+        "email": null,
+        "givenName": "",
+        "familyName": "",
+        "middleName": null,
+        "nickName": null,
+        "preferredUsername": "sbsivertsen",
+        "picture": null,
+        "website": null,
+        "emailVerified": false,
+        "gender": null,
+        "birthdate": null,
+        "phoneNumber": null,
+        "phoneNumberVerified": null,
+        "updatedAt": null,
+        "profile": null,
+        "address": {
+          "formatted": null,
+          "streetAddress": null,
+          "locality": null,
+          "region": null,
+          "postalCode": null,
+          "country": null
+        },
+        "locale": null,
+        "fullName": null,
+        "zoneInfo": null
+      }
+    }
+  }
