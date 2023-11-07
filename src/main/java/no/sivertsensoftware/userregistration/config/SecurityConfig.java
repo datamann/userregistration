@@ -28,7 +28,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 
 @Configuration
 @EnableWebSecurity
-//@EnableMethodSecurity
 public class SecurityConfig {
 
     public static final String ADMIN = "ADMIN";
@@ -46,16 +45,22 @@ public class SecurityConfig {
     }
 
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity http, MvcRequestMatcher.Builder mvc) throws Exception { //@Qualifier("opaWebClient")WebClient opaWebClient,
+    SecurityFilterChain securityFilterChain(HttpSecurity http, MvcRequestMatcher.Builder mvc) throws Exception {
 
         http
             .csrf(cust -> cust.disable())
             .cors(cors -> cors.disable())
 
             .authorizeHttpRequests(authorizeRequests -> authorizeRequests
-                //.requestMatchers(mvc.pattern(HttpMethod.GET, "/**")).hasAnyRole(USER,ADMIN)
-                //.requestMatchers(HttpMethod.GET,"/**").access(opaAuthorizationManager)
                 .requestMatchers(mvc.pattern(HttpMethod.GET, "/**")).access(opaAuthorizationManager)
+                .requestMatchers(mvc.pattern(HttpMethod.GET, "/login/oauth2/code/**")).access(opaAuthorizationManager)
+                .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/users/**")).access(opaAuthorizationManager)
+                .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/users/**")).access(opaAuthorizationManager)
+                .requestMatchers(mvc.pattern(HttpMethod.PUT, "/api/users/**")).access(opaAuthorizationManager)
+                .requestMatchers(mvc.pattern(HttpMethod.DELETE, "/api/users/**")).access(opaAuthorizationManager)
+
+                // Support ROLE based access
+                //.requestMatchers(mvc.pattern(HttpMethod.GET, "/**")).hasAnyRole(USER,ADMIN)
                 // .requestMatchers(mvc.pattern(HttpMethod.GET, "/login/oauth2/code/**")).hasAnyRole(USER,ADMIN)
                 // .requestMatchers(mvc.pattern(HttpMethod.GET, "/api/users/**")).hasAnyRole(USER,ADMIN)
                 // .requestMatchers(mvc.pattern(HttpMethod.POST, "/api/users/**")).hasRole(ADMIN)
@@ -125,59 +130,4 @@ public class SecurityConfig {
             return mappedAuthorities;
         };
     }
-
-    // @Bean
-    // public ReactiveAuthorizationManager<AuthorizationContext> opaAuthManager(WebClient opaWebClient) {
-        
-    //     return (auth, context) -> {
-    //         return opaWebClient.post()
-    //           .accept(MediaType.APPLICATION_JSON)
-    //           .contentType(MediaType.APPLICATION_JSON)
-    //           .body(toAuthorizationPayload(auth,context), Map.class)
-    //           .exchangeToMono(this::toDecision);
-    //     };
-    // }
-
-    // private Publisher<Map<String,Object>> toAuthorizationPayload(Mono<Authentication> auth, AuthorizationContext context) {
-    //     return auth
-    //       .defaultIfEmpty(new AnonymousAuthenticationToken("**ANONYMOUS**", new Object(), Arrays.asList(new SimpleGrantedAuthority("ANONYMOUS"))))
-    //       .map( a -> {
-              
-    //         Map<String,String> headers = context.getExchange().getRequest()
-    //             .getHeaders()
-    //             .toSingleValueMap();
-              
-    //           Map<String,Object> attributes = ImmutableMap.<String,Object>builder()
-    //             .put("principal",a.getName())
-    //             .put("authorities",
-    //                a.getAuthorities()
-    //                  .stream()
-    //                  .map(g -> g.getAuthority())
-    //                  .collect(Collectors.toList()))
-    //             .put("uri", context.getExchange().getRequest().getURI().getPath())
-    //             .put("headers",headers)
-    //             .build();
-              
-    //           Map<String,Object> input = ImmutableMap.<String,Object>builder()
-    //             .put("input",attributes)
-    //             .build();
-             
-    //           return input;
-    //       });
-    // }
-
-    // private Mono<AuthorizationDecision> toDecision(ClientResponse response) {
-        
-    //     if ( !response.statusCode().is2xxSuccessful()) {
-    //         return Mono.just(new AuthorizationDecision(false));
-    //     }
-        
-    //     return response
-    //      .bodyToMono(ObjectNode.class)
-    //      .map(node -> {
-    //          boolean authorized = node.path("result").path("authorized").asBoolean(false);
-    //          return new AuthorizationDecision(authorized);
-    //      });
-        
-    // }
 }
