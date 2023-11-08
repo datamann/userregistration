@@ -38,3 +38,6 @@ pgadmin/
 postgresql/
 keycloak/
 node_modules
+
+### Exclude OPA binaries
+opa_policies/opa
