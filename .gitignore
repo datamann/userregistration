@@ -39,5 +39,5 @@ postgresql/
 keycloak/
 node_modules
 
-### Exclude OPA binaries
+### Exclude OPA binaries ###
 opa_policies/opa
