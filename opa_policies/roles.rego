@@ -34,16 +34,19 @@ allow_admin_from_api {
     
     ### Can be used if token verification is enabled.
     token.decode_verify.payload.authorizations[_] == "dnb.userregistration.write"
+
+    not overrides
 }
 
 allow_user_from_api {
     input.method == "GET"
     ### Can be used if token verification is enabled.
     token.decode_verify.payload.authorizations[_] == "dnb.userregistration.read"
+    not overrides
 }
 
 overrides := get_overrides {
-    get_overrides := input.user.attributes.hr_data[_] == "long_term_sicknes"
+    get_overrides := input.user.claims.hr_data[_] == "long_term_sicknes"
 
     # Can be used if token verification is enabled.
     #get_overrides := token.decode_verify.payload.hr_data[_] == "parental leave"
