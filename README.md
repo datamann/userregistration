@@ -8,7 +8,7 @@ The User Registration feature has no practical use, this project is created to d
 
 Versions:
 * The branch "in_app_authorization" will use "internal" authorizations only, based on roles. These roles are injected into the authentication JWT token from the external authentication service, Keycloak.
-* The branch "external_authorization" will use OpenPoliyAgent https://www.openpolicyagent.org/ for authorizations. The application will receive roles and attributes from Keycloak, and forward the data to OPA for authorization approval. OPA as a PDP will only make an "allow/not allow" decision based on data it receives from Keycloak via the application. The enforcement of the policy is done by the application.
+* The branch "external_authorization" and "main" will use OpenPoliyAgent https://www.openpolicyagent.org/ for authorizations. The application will receive roles and attributes from Keycloak, and forward the data to OPA for authorization approval. OPA as a PDP will only make an "allow/not allow" decision based on data it receives from Keycloak via the application. The enforcement of the policy is done by the application.
 
 
 ## Getting Started
@@ -36,6 +36,23 @@ Versions:
 
 * From a terminal, run docker-compose up -d
 * Run Spring Boot app from e.g. VSCode
+
+### TIPS
+* Troubleshooting OPA
+* To query OPA:
+* ```
+  curl -X POST http://localhost:8181/v1/data/dnb/userregistration/auth -d @./data.json -H 'Content-Type: application/json'
+  ```
+* To look at OPA document structure:
+* ```
+  ./opa run ../OPA/input.json
+  ```
+* [See Open Policy Documentation](https://www.openpolicyagent.org/docs/latest/#3-try-opa-run-interactive)
+
+### Useful tools:
+* [JWT.IO](https://jwt.io/)
+* [Stringify](https://jsonformatter.org/json-stringify-online)
+* [JSON Formatter and validator](https://jsonformatter.curiousconcept.com/#)
 
 ## Authors
 
