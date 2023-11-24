@@ -8,6 +8,7 @@ package dnb.userregistration.roles
 # input.user.attributes.realm_access.roles
 
 import future.keywords.in
+import future.keywords.if
 
 # Can be used if token verification is enabled.
 import data.dnb.userregistration.token
@@ -23,6 +24,13 @@ allow_user {
     not overrides
 }
 
+allow_user_from_api {
+    input.method == "GET"
+    ### Can be used if token verification is enabled.
+    token.decode_verify.payload.authorizations[_] == "dnb.userregistration.read"
+    not overrides
+}
+
 allow_admin {
     input.method in {"GET", "POST", "PUT", "DELETE"}
     input.user.attributes.authorizations[_] == "dnb.userregistration.write"
@@ -31,22 +39,14 @@ allow_admin {
 
 allow_admin_from_api {
     input.method in {"GET", "POST", "PUT", "DELETE"}
-    
     ### Can be used if token verification is enabled.
     token.decode_verify.payload.authorizations[_] == "dnb.userregistration.write"
-
-    not overrides
-}
-
-allow_user_from_api {
-    input.method == "GET"
-    ### Can be used if token verification is enabled.
-    token.decode_verify.payload.authorizations[_] == "dnb.userregistration.read"
     not overrides
 }
 
 overrides := get_overrides {
     get_overrides := input.user.claims.hr_data[_] == "long_term_sicknes"
+    allow_user := true
 
     # Can be used if token verification is enabled.
     #get_overrides := token.decode_verify.payload.hr_data[_] == "parental leave"
