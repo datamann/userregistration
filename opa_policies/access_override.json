@@ -1,0 +1,10 @@
+{
+    "access_override": {
+        "thor": [
+            "read"
+        ],
+        "sbsivertsen": [
+            "admin"
+        ]
+    }
+}

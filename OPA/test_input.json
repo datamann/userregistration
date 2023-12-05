@@ -1,0 +1,11 @@
+{
+    "input": {
+        "authorizations": [
+            "dnb.userregistration.write",
+            "dnb.partymaster.write"
+        ],
+        "hr_data": [
+            "parental leave"
+        ]
+    }
+}
