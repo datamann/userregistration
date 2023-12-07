@@ -4,8 +4,10 @@
             "dnb.userregistration.write",
             "dnb.partymaster.write"
         ],
+        "preferred_username": "sbsivertsen",
+        "method": "GET",
         "hr_data": [
-            "parental leave"
+            "long-term sickness"
         ]
     }
 }
