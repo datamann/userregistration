@@ -9,7 +9,16 @@ import data.denyHrCodes
 import data.rosterList
 
 default not_denied := true
-default allow_write := true
+#default allow_write := false
+
+allow_write := true if {
+    user_write_permission
+    not user_converted_to_read_only
+}
+
+allow_write := false if {
+    user_read_only_permission
+}
 
 allow_write := false if {
     user_converted_to_read_only
@@ -24,6 +33,8 @@ not_denied := false if {
 }
 
 # Access is denied if token is not valid.
+
+
 # Access is denied if user has denied code as HR Code.
 denied_access_from_hrcode if {
     hrData := input.hr_data[_]
@@ -40,8 +51,16 @@ user_converted_to_read_only if {
     input.preferred_username in readOnlyList
 }
 
+# User with "read only" permission.
 user_read_only_permission if {
     input.method == "GET"
 	t := "dnb.userregistration.read"
     t in input.authorizations
+}
+
+# User with "write" permission.
+user_write_permission if {
+    input.method in {"GET", "POST", "PUT", "DELETE"}
+	t := "dnb.userregistration.write"
+	t in input.authorizations
 }
