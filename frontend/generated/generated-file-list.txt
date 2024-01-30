@@ -1,5 +1,0 @@
-UserController.ts
-no/sivertsensoftware/userregistration/model/User.ts
-connect-client.default.ts
-endpoints.ts
-no/sivertsensoftware/userregistration/model/UserModel.ts
