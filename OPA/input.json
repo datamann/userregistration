@@ -1,0 +1,409 @@
+{
+  "input": {
+    "path": [
+      ""
+    ],
+    "method": "GET",
+    "payload": null,
+    "user": {
+      "authorities": [
+        {
+          "authority": "OIDC_USER",
+          "attributes": {
+            "at_hash": "VnEtf3M12pULM5-El4hxSw",
+            "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+            "email_verified": false,
+            "hr_data": [
+              "sick leave"
+            ],
+            "authorizations": [
+              "dnb.userregistration.read",
+              "dnb.partymaster.read"
+            ],
+            "iss": "http://mykeycloak:8080/realms/DNB",
+            "typ": "ID",
+            "preferred_username": "thor",
+            "given_name": "",
+            "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+            "sid": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+            "aud": [
+              "userregistration"
+            ],
+            "acr": "1",
+            "realm_access": {
+              "roles": [
+                "USERS"
+              ]
+            },
+            "azp": "userregistration",
+            "realm_access.roles": [
+              "USERS"
+            ],
+            "auth_time": "2024-02-23T08:26:00Z",
+            "exp": "2024-02-23T16:26:00Z",
+            "session_state": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+            "family_name": "",
+            "iat": "2024-02-23T08:26:00Z",
+            "jti": "ef4a070d-5104-4c6b-8a8a-949963ee2f35"
+          },
+          "idToken": {
+            "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE3MDg3MDU1NjAsImlhdCI6MTcwODY3Njc2MCwiYXV0aF90aW1lIjoxNzA4Njc2NzYwLCJqdGkiOiJlZjRhMDcwZC01MTA0LTRjNmItOGE4YS05NDk5NjNlZTJmMzUiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiNzY4NzZkOTctOTkxMy00M2ZmLTgwODMtYzllZGI2MWE2YWRkIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJzcWx1RHBSWXpTVlNPaVVkeUFWRGFKWUVQV1A1OC1SQzhiVjN2NzJkRFZFIiwic2Vzc2lvbl9zdGF0ZSI6IjhiMjcyMWZjLTlhNGEtNDU3Yi04MDA3LWI1YTU5ZDM1Y2E1MCIsImF0X2hhc2giOiJWbkV0ZjNNMTJwVUxNNS1FbDRoeFN3IiwiYWNyIjoiMSIsInNpZCI6IjhiMjcyMWZjLTlhNGEtNDU3Yi04MDA3LWI1YTU5ZDM1Y2E1MCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGhvciIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiJ9.XLL-zYeyz5BYPh8cPfbTKlr4dyCouPbM3oP5LR06oEeejGow69hGF9uWso0ySwiRHbwdBGq1bJbG8vBAPntLE9VnE50nO_-rnquGLDJ6K-IeZlHeJ2jDXA6BtfmlaQHMtQB8z2f0sXcBLo7mV1TBDxOeeWGnqiSDSNURCcKAFXeneFhx9OtyuFsgQvzifvoMUQjuM8cfbCyaDEKiEnSfmkm-jKN8Z5s9U6CJBt-PWPhC_SIok1lpp28DhiS196zkUvYzVnndwrTqBgAPSetimggPnFP5o_LIKLHj0iVnQR7Cyow-J13eAf7NIMMyDmXGT8M6WFjgQq5gorgP3y2Tng",
+            "issuedAt": "2024-02-23T08:26:00Z",
+            "expiresAt": "2024-02-23T16:26:00Z",
+            "claims": {
+              "at_hash": "VnEtf3M12pULM5-El4hxSw",
+              "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+              "email_verified": false,
+              "iss": "http://mykeycloak:8080/realms/DNB",
+              "typ": "ID",
+              "preferred_username": "thor",
+              "given_name": "",
+              "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+              "sid": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+              "aud": [
+                "userregistration"
+              ],
+              "acr": "1",
+              "azp": "userregistration",
+              "auth_time": "2024-02-23T08:26:00Z",
+              "exp": "2024-02-23T16:26:00Z",
+              "session_state": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+              "iat": "2024-02-23T08:26:00Z",
+              "family_name": "",
+              "jti": "ef4a070d-5104-4c6b-8a8a-949963ee2f35"
+            },
+            "subject": "76876d97-9913-43ff-8083-c9edb61a6add",
+            "issuer": "http://mykeycloak:8080/realms/DNB",
+            "audience": [
+              "userregistration"
+            ],
+            "authenticatedAt": "2024-02-23T08:26:00Z",
+            "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+            "authenticationContextClass": "1",
+            "authenticationMethods": null,
+            "authorizedParty": "userregistration",
+            "accessTokenHash": "VnEtf3M12pULM5-El4hxSw",
+            "authorizationCodeHash": null,
+            "email": null,
+            "givenName": "",
+            "familyName": "",
+            "middleName": null,
+            "nickName": null,
+            "preferredUsername": "thor",
+            "picture": null,
+            "website": null,
+            "emailVerified": false,
+            "gender": null,
+            "birthdate": null,
+            "phoneNumber": null,
+            "phoneNumberVerified": null,
+            "updatedAt": null,
+            "profile": null,
+            "address": {
+              "formatted": null,
+              "streetAddress": null,
+              "locality": null,
+              "region": null,
+              "postalCode": null,
+              "country": null
+            },
+            "locale": null,
+            "fullName": null,
+            "zoneInfo": null
+          },
+          "userInfo": {
+            "claims": {
+              "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+              "email_verified": false,
+              "realm_access": {
+                "roles": [
+                  "USERS"
+                ]
+              },
+              "hr_data": [
+                "sick leave"
+              ],
+              "realm_access.roles": [
+                "USERS"
+              ],
+              "authorizations": [
+                "dnb.userregistration.read",
+                "dnb.partymaster.read"
+              ],
+              "preferred_username": "thor",
+              "given_name": "",
+              "family_name": ""
+            },
+            "subject": "76876d97-9913-43ff-8083-c9edb61a6add",
+            "email": null,
+            "givenName": "",
+            "familyName": "",
+            "middleName": null,
+            "nickName": null,
+            "preferredUsername": "thor",
+            "picture": null,
+            "website": null,
+            "emailVerified": false,
+            "gender": null,
+            "birthdate": null,
+            "phoneNumber": null,
+            "phoneNumberVerified": null,
+            "updatedAt": null,
+            "profile": null,
+            "address": {
+              "formatted": null,
+              "streetAddress": null,
+              "locality": null,
+              "region": null,
+              "postalCode": null,
+              "country": null
+            },
+            "locale": null,
+            "fullName": null,
+            "zoneInfo": null
+          }
+        },
+        {
+          "authority": "SCOPE_email"
+        },
+        {
+          "authority": "SCOPE_openid"
+        },
+        {
+          "authority": "SCOPE_profile"
+        }
+      ],
+      "attributes": {
+        "at_hash": "VnEtf3M12pULM5-El4hxSw",
+        "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+        "email_verified": false,
+        "hr_data": [
+          "sick leave"
+        ],
+        "authorizations": [
+          "dnb.userregistration.read",
+          "dnb.partymaster.read"
+        ],
+        "iss": "http://mykeycloak:8080/realms/DNB",
+        "typ": "ID",
+        "preferred_username": "thor",
+        "given_name": "",
+        "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+        "sid": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+        "aud": [
+          "userregistration"
+        ],
+        "acr": "1",
+        "realm_access": {
+          "roles": [
+            "USERS"
+          ]
+        },
+        "azp": "userregistration",
+        "realm_access.roles": [
+          "USERS"
+        ],
+        "auth_time": "2024-02-23T08:26:00Z",
+        "exp": "2024-02-23T16:26:00Z",
+        "session_state": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+        "family_name": "",
+        "iat": "2024-02-23T08:26:00Z",
+        "jti": "ef4a070d-5104-4c6b-8a8a-949963ee2f35"
+      },
+      "idToken": {
+        "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE3MDg3MDU1NjAsImlhdCI6MTcwODY3Njc2MCwiYXV0aF90aW1lIjoxNzA4Njc2NzYwLCJqdGkiOiJlZjRhMDcwZC01MTA0LTRjNmItOGE4YS05NDk5NjNlZTJmMzUiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiNzY4NzZkOTctOTkxMy00M2ZmLTgwODMtYzllZGI2MWE2YWRkIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJzcWx1RHBSWXpTVlNPaVVkeUFWRGFKWUVQV1A1OC1SQzhiVjN2NzJkRFZFIiwic2Vzc2lvbl9zdGF0ZSI6IjhiMjcyMWZjLTlhNGEtNDU3Yi04MDA3LWI1YTU5ZDM1Y2E1MCIsImF0X2hhc2giOiJWbkV0ZjNNMTJwVUxNNS1FbDRoeFN3IiwiYWNyIjoiMSIsInNpZCI6IjhiMjcyMWZjLTlhNGEtNDU3Yi04MDA3LWI1YTU5ZDM1Y2E1MCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGhvciIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiJ9.XLL-zYeyz5BYPh8cPfbTKlr4dyCouPbM3oP5LR06oEeejGow69hGF9uWso0ySwiRHbwdBGq1bJbG8vBAPntLE9VnE50nO_-rnquGLDJ6K-IeZlHeJ2jDXA6BtfmlaQHMtQB8z2f0sXcBLo7mV1TBDxOeeWGnqiSDSNURCcKAFXeneFhx9OtyuFsgQvzifvoMUQjuM8cfbCyaDEKiEnSfmkm-jKN8Z5s9U6CJBt-PWPhC_SIok1lpp28DhiS196zkUvYzVnndwrTqBgAPSetimggPnFP5o_LIKLHj0iVnQR7Cyow-J13eAf7NIMMyDmXGT8M6WFjgQq5gorgP3y2Tng",
+        "issuedAt": "2024-02-23T08:26:00Z",
+        "expiresAt": "2024-02-23T16:26:00Z",
+        "claims": {
+          "at_hash": "VnEtf3M12pULM5-El4hxSw",
+          "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+          "email_verified": false,
+          "iss": "http://mykeycloak:8080/realms/DNB",
+          "typ": "ID",
+          "preferred_username": "thor",
+          "given_name": "",
+          "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+          "sid": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+          "aud": [
+            "userregistration"
+          ],
+          "acr": "1",
+          "azp": "userregistration",
+          "auth_time": "2024-02-23T08:26:00Z",
+          "exp": "2024-02-23T16:26:00Z",
+          "session_state": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+          "iat": "2024-02-23T08:26:00Z",
+          "family_name": "",
+          "jti": "ef4a070d-5104-4c6b-8a8a-949963ee2f35"
+        },
+        "subject": "76876d97-9913-43ff-8083-c9edb61a6add",
+        "issuer": "http://mykeycloak:8080/realms/DNB",
+        "audience": [
+          "userregistration"
+        ],
+        "authenticatedAt": "2024-02-23T08:26:00Z",
+        "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+        "authenticationContextClass": "1",
+        "authenticationMethods": null,
+        "authorizedParty": "userregistration",
+        "accessTokenHash": "VnEtf3M12pULM5-El4hxSw",
+        "authorizationCodeHash": null,
+        "email": null,
+        "givenName": "",
+        "familyName": "",
+        "middleName": null,
+        "nickName": null,
+        "preferredUsername": "thor",
+        "picture": null,
+        "website": null,
+        "emailVerified": false,
+        "gender": null,
+        "birthdate": null,
+        "phoneNumber": null,
+        "phoneNumberVerified": null,
+        "updatedAt": null,
+        "profile": null,
+        "address": {
+          "formatted": null,
+          "streetAddress": null,
+          "locality": null,
+          "region": null,
+          "postalCode": null,
+          "country": null
+        },
+        "locale": null,
+        "fullName": null,
+        "zoneInfo": null
+      },
+      "userInfo": {
+        "claims": {
+          "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+          "email_verified": false,
+          "realm_access": {
+            "roles": [
+              "USERS"
+            ]
+          },
+          "hr_data": [
+            "sick leave"
+          ],
+          "realm_access.roles": [
+            "USERS"
+          ],
+          "authorizations": [
+            "dnb.userregistration.read",
+            "dnb.partymaster.read"
+          ],
+          "preferred_username": "thor",
+          "given_name": "",
+          "family_name": ""
+        },
+        "subject": "76876d97-9913-43ff-8083-c9edb61a6add",
+        "email": null,
+        "givenName": "",
+        "familyName": "",
+        "middleName": null,
+        "nickName": null,
+        "preferredUsername": "thor",
+        "picture": null,
+        "website": null,
+        "emailVerified": false,
+        "gender": null,
+        "birthdate": null,
+        "phoneNumber": null,
+        "phoneNumberVerified": null,
+        "updatedAt": null,
+        "profile": null,
+        "address": {
+          "formatted": null,
+          "streetAddress": null,
+          "locality": null,
+          "region": null,
+          "postalCode": null,
+          "country": null
+        },
+        "locale": null,
+        "fullName": null,
+        "zoneInfo": null
+      },
+      "claims": {
+        "at_hash": "VnEtf3M12pULM5-El4hxSw",
+        "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+        "email_verified": false,
+        "hr_data": [
+          "sick leave"
+        ],
+        "authorizations": [
+          "dnb.userregistration.read",
+          "dnb.partymaster.read"
+        ],
+        "iss": "http://mykeycloak:8080/realms/DNB",
+        "typ": "ID",
+        "preferred_username": "thor",
+        "given_name": "",
+        "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+        "sid": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+        "aud": [
+          "userregistration"
+        ],
+        "acr": "1",
+        "realm_access": {
+          "roles": [
+            "USERS"
+          ]
+        },
+        "azp": "userregistration",
+        "realm_access.roles": [
+          "USERS"
+        ],
+        "auth_time": "2024-02-23T08:26:00Z",
+        "exp": "2024-02-23T16:26:00Z",
+        "session_state": "8b2721fc-9a4a-457b-8007-b5a59d35ca50",
+        "family_name": "",
+        "iat": "2024-02-23T08:26:00Z",
+        "jti": "ef4a070d-5104-4c6b-8a8a-949963ee2f35"
+      },
+      "name": "thor",
+      "subject": "76876d97-9913-43ff-8083-c9edb61a6add",
+      "issuer": "http://mykeycloak:8080/realms/DNB",
+      "audience": [
+        "userregistration"
+      ],
+      "expiresAt": "2024-02-23T16:26:00Z",
+      "issuedAt": "2024-02-23T08:26:00Z",
+      "authenticatedAt": "2024-02-23T08:26:00Z",
+      "nonce": "sqluDpRYzSVSOiUdyAVDaJYEPWP58-RC8bV3v72dDVE",
+      "authenticationContextClass": "1",
+      "authenticationMethods": null,
+      "authorizedParty": "userregistration",
+      "accessTokenHash": "VnEtf3M12pULM5-El4hxSw",
+      "authorizationCodeHash": null,
+      "email": null,
+      "givenName": "",
+      "familyName": "",
+      "middleName": null,
+      "nickName": null,
+      "preferredUsername": "thor",
+      "picture": null,
+      "website": null,
+      "emailVerified": false,
+      "gender": null,
+      "birthdate": null,
+      "phoneNumber": null,
+      "phoneNumberVerified": null,
+      "updatedAt": null,
+      "profile": null,
+      "address": {
+        "formatted": null,
+        "streetAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "country": null
+      },
+      "locale": null,
+      "fullName": null,
+      "zoneInfo": null
+    }
+  }
+}

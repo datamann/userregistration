@@ -1,0 +1,13 @@
+{
+    "denyHrCodes": [
+        "long-term sickness",
+        "parental leave"
+    ],
+    "rosterList": [
+        "sbsivertsen",
+        "thor"
+    ],
+    "readOnlyList": [
+        ""
+    ]
+}
