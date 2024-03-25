@@ -14,7 +14,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@Configuration
+// TODO: remove one of annotations
+//@Configuration
 @Component
 public class KeycloakLogoutHandler implements LogoutHandler {
 

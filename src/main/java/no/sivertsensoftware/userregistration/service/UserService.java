@@ -40,12 +40,13 @@ public class UserService {
     public void updateUser(Long id, User user) {
         userRepository.updateUser(id, user.getFirst_name(), user.getLast_name(), user.getEmail());
     }
-     public boolean deleteById(Long id){
+    
+    public boolean deleteById(Long id){
 
-        Boolean deleted = userRepository.deleteByLongId(id);
-        return deleted;
+    Boolean deleted = userRepository.deleteByLongId(id);
+    return deleted;
 
-     }
+    }
 
     public boolean existsById(Long id) {
         return userRepository.existsById(id);

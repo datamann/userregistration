@@ -1,6 +1,6 @@
 server:
   port : 8180
-  context-path: /usereg 
+  #context-path: /usereg 
 app:
   opa:
     authz:
@@ -13,18 +13,19 @@ management:
 logging:
   level:
     root: INFO
+    web: INFO
     org:
       springframework:
-        security: DEBUG
-        web: DEBUG
+        security: INFO
+        web: INFO
 spring:
   cloud:
     openfeign:
       client:
         config:
           default:
-            connectTimeout: 5000
-            readTimeout: 5000
+            connectTimeout: 10000
+            readTimeout: 10000
             loggerLevel: full
   profiles:
         active: default

@@ -25,7 +25,7 @@ export default function MainView() {
   }, [setItems]);
 
   async function isAdmin() {
-    setIsAdmin(await UserController.isAdmin().catch(() => false));
+    setIsAdmin(await UserController.mayBeAllowed().catch(() => false));
   }
 
   async function createUser(user: User) {

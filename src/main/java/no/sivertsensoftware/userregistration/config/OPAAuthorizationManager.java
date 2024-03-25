@@ -3,41 +3,40 @@ package no.sivertsensoftware.userregistration.config;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authorization.AuthorizationDecision;
 import org.springframework.security.authorization.AuthorizationManager;
 import org.springframework.security.web.access.intercept.RequestAuthorizationContext;
-import org.springframework.stereotype.Component;
 import org.springframework.web.util.WebUtils;
-import org.springframework.security.core.Authentication;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-
+import org.springframework.security.core.Authentication;
 import lombok.SneakyThrows;
 import no.sivertsensoftware.userregistration.proxy.rest.OpaClient;
+import no.sivertsensoftware.userregistration.service.OpaauthorizationService;
 
-@Component
-public class OPAAuthorizationManager implements AuthorizationManager<RequestAuthorizationContext> {
+@Configuration
+public class OPAAuthorizationManager implements AuthorizationManager<RequestAuthorizationContext>{
 
-    private final ObjectMapper objectMapper1 = new ObjectMapper();
+    //private static final Logger logger = LogManager.getLogger(OPAAuthorizationManager.class);
 
-    @Autowired
-    private OpaClient opaClient;
+    private final OpaClient opaClient;
+    private final ObjectMapper objectMapper;
+    private final OpaauthorizationService authorizationService;
 
-    @Autowired
-    private ObjectMapper objectMapper;
+    public OPAAuthorizationManager( OpaClient opaClient, ObjectMapper objectMapper, OpaauthorizationService authorizationService)
+    {
+        this.opaClient = opaClient;
+        this.objectMapper = objectMapper;
+        this.authorizationService = authorizationService;
+    }
 
-/**
- * Check this GITHub project:
- * https://github.com/anarsultanov/examples/blob/master/spring-security-opa-authz/src/main/java/dev/sultanov/springsecurity/opaauthz/config/OpaClient.java
- * https://github.com/lamoboos223/Spring-Boot-OPA-Example/blob/main/src/main/java/com/example/demo/ExampleService.java
- */
-
+    @SuppressWarnings({ "unused", "unchecked" })
     @Override
     @SneakyThrows
     public AuthorizationDecision check (Supplier<Authentication> authentication, RequestAuthorizationContext requestAuthorizationContext) {
 
         var httpServletRequest = requestAuthorizationContext.getRequest();
+        var getUserPrincipal = requestAuthorizationContext.getRequest().getUserPrincipal();
 
         String[] path = httpServletRequest.getRequestURI().replaceAll("^/|/$", "").split("/");
 
@@ -52,18 +51,46 @@ public class OPAAuthorizationManager implements AuthorizationManager<RequestAuth
 
         OPADataResponse opaDataResponse = opaClient.authorizedToAccessAPI(new OPADataRequest(input));
 
-        ObjectNode requestNode = objectMapper1.createObjectNode();
-        requestNode.set("input", objectMapper1.valueToTree(opaDataResponse.getResult().getEval()));
-        System.out.println("-----------***---------- Test of JSON breakdown: " + requestNode.toPrettyString());
+        String allow = opaDataResponse.getResult().getEval().get("allow");
+        if (allow != null) {
+            authorizationService.setAllow(allow);
+        } else {
+            authorizationService.setAllow("No value!");
+        }
 
-        
-        // TODO: Remove!
-        AuthorizationDecision des = new AuthorizationDecision(opaDataResponse.getResult().getAllow());
-        System.out.println("Rule Allow: " + des);
-        // Result:
-        // Decision: AuthorizationDecision [granted=true]
-        
-        return des;
+        String not_denied = opaDataResponse.getResult().getEval().get("not_denied");
+        if (not_denied != null){
+            authorizationService.setNotDenied(not_denied);
+        } else {
+            authorizationService.setNotDenied("No value!");
+        }
+
+        String user_read_permission = opaDataResponse.getResult().getEval().get("user_read_permission");
+        if (user_read_permission != null || user_read_permission != "null"){
+            authorizationService.setReadPermission(user_read_permission);
+        } else {
+             authorizationService.setReadPermission("No value!");
+        }
+
+        String user_write_permission = opaDataResponse.getResult().getEval().get("user_write_permission");
+        if (user_write_permission != null || user_write_permission != "null"){
+            authorizationService.setWritePermission(user_write_permission);
+        } else {
+             authorizationService.setWritePermission("No value!");
+        }
+
+        String user_converted_to_read_only = opaDataResponse.getResult().getEval().get("user_converted_to_read_only");
+        if (user_converted_to_read_only != null  || user_converted_to_read_only != "null") {
+            authorizationService.setReadOnlyPermission(user_converted_to_read_only);
+        } else {
+            authorizationService.setReadOnlyPermission("No value!");
+        }
+
+        if (authorizationService.getReadPermission() == "true" || authorizationService.getReadOnlyPermission() == "true") {
+            authorizationService.setUserHasWritePermission("false");
+        } else {
+            authorizationService.setUserHasWritePermission("true");
+        }
+        return new AuthorizationDecision(opaDataResponse.getResult().getAllow());
     }
-    
 }

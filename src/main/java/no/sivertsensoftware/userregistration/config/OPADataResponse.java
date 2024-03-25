@@ -14,7 +14,6 @@ public class OPADataResponse {
     @Data
     public static class OPAResult{
         private Boolean allow;
-        Map<String, Object> eval;
-        Map<String, Object> allow_write;
+        Map<String, String> eval;
     }
 }
