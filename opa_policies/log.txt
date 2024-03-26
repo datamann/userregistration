@@ -1,0 +1,4160 @@
+[INFO] Initializing server. OPA is running on a public (0.0.0.0) network interface. Unless you intend to expose OPA outside of the host, binding to the localhost interface (--addr localhost:8181) is recommended. See https://www.openpolicyagent.org/docs/latest/security/#interface-binding
+  diagnostic-addrs = []
+  addrs = |
+      [
+        ":8181"
+      ]
+
+[DEBUG] maxprocs: Leaving GOMAXPROCS=10: CPU quota undefined
+
+[DEBUG] watching path
+  path = "."
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[DEBUG] Server initialized.
+
+[DEBUG] Sending request.
+  url = "https://telemetry.openpolicyagent.org/v1/version"
+  headers = |
+      {
+        "Content-Type": [
+          "application/json"
+        ],
+        "User-Agent": [
+          "Open Policy Agent/0.61.0 (darwin, amd64)"
+        ]
+      }
+  method = "POST"
+
+[INFO] Processed file watch event.
+  duration = 25004750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 75738292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 62670750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 47819750
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15243292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 32860125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 53253250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 57550584
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14937916
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14312166
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13675416
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13715042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13904333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13893000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14780959
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13954083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14286750
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13592208
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17401750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13592208
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13585875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17672416
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20093417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18688042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 38513375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15307000
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15896875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13955584
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13737000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19492458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19668875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17432250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18135500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14973958
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13403208
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13357167
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13586625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18528708
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17234208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[DEBUG] Received response.
+  method = "POST"
+  url = "https://telemetry.openpolicyagent.org/v1/version"
+  headers = |
+      {
+        "Connection": [
+          "keep-alive"
+        ],
+        "Content-Length": [
+          "217"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "Date": [
+          "Mon, 26 Feb 2024 16:07:10 GMT"
+        ]
+      }
+  status = "200 OK"
+
+[DEBUG] OPA is up to date.
+  current_version = "0.61.0"
+
+[INFO] Processed file watch event.
+  duration = 19192750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19004125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17890500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17151375
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18498917
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19456584
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 33659208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 24801917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17440500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17933667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13664833
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13299000
+
+[DEBUG] Registered file event.
+  event = "WRITE|CHMOD   \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14198625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13635125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17615084
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22709333
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 16979542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15895083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13506458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13692750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14128209
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13918667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13378041
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18034958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17550916
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19342542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13758125
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13563791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13599083
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20349791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19425958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19966208
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17568791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16090583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13814083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18281125
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20772750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19566833
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21839709
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17881750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18029542
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19165667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17740042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16858875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 25530375
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16425166
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21482042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 20869959
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 24369958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21319167
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16660667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19403333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 29650041
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 443868625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14390250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15551084
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18107667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17726583
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16967667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15593625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14957750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14430458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13759416
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13815084
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14146209
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13685792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13619000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13685209
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13861375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13868666
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13808125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13949542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13525750
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13814708
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20848500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19693166
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13736500
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13799917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13520417
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13653125
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17337791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17326792
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16840667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18370958
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13774625
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13631250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13810000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13606666
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17606417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18732458
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18641000
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19307250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20308708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 21744958
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17885542
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18494375
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20534459
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 23950125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18584083
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 25976416
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21148958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17281250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19611583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18442000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18185250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18026333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17739708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 52365792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21023791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 20527834
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19489791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19587416
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21285625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21346417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21955333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20861458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 21631917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21142625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18797834
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19116042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16761167
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18035208
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18346875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 58057042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17215583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19835292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14591125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14376208
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14084500
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13749958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13614000
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13741458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13808166
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13813959
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13879208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13677042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14041917
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13971083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13182625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19786583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14282250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14601334
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 89273125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 54042708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 52739959
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 55107333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 56056917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 60921541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 55054916
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 60845458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 46704291
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 62217208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 76546333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 35385875
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19422667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20292708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 45472292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15977125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14612791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14000208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13990792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14810125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14140417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14818416
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14466708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14378667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14186750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15001375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14222583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15213708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14796000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14248500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14291292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14351125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14121416
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13996916
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14744541
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13893875
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14270834
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14404958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14192541
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13837375
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14216584
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14213166
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14595875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14379334
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14277500
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14264584
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13992667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13811209
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13892292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13600125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13827167
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13736375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14398833
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14214958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14594458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13996333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13971541
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13831792
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14039000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14213375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14055167
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13547667
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17151417
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13718833
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18977791
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 20111166
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20352667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 22186417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20250875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 23312875
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22740333
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18985958
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20580250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22491583
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20285750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22685208
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20390791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 24131959
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20130625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19364750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21233208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19900125
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20279792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21556459
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19477500
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 25030791
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20260000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20917416
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 96445917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 45613542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 68497875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 82112667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 108036917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 106189333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 48272834
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 64541417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 34105375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 115944959
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 108561792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22139917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17052041
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 16199375
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 16835875
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15914333
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15198458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17144791
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14009458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14567167
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13939333
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13826041
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13740458
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14891708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14414666
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14400250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20431833
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19045750
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19832792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19667458
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17746208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21742458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20466958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18863750
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 20755000
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20516542
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13636000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17556625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21498500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17770542
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22561916
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17208334
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18011333
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13583750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13482708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13409875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18863625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18956583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18506542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18674459
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13836041
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13603667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13602958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13732583
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18778500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16202541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17822875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19254083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13901083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13685375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13966875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13576167
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17335541
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19652291
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19928125
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19817500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14885333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13551625
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13435417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17927959
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18878667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19381709
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19820667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 20398084
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19063250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19837084
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 103448541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 58174250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 35925917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 56826500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 55835417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 59360917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 47347834
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 58720959
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 53750583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 133889959
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 70401541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 54094750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 81717541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 37338625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 51488292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 59613208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 55013000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 46671042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 69247292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 68612083
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 34267875
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17699083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 16787750
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15462250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14562250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13925167
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13604833
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13695084
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13788042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13537916
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17368167
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18247334
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20803167
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20167000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18071292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 25079958
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22655500
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19181334
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 23346709
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21481292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17319541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 22775542
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 21599292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 27281833
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 22282958
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18177083
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 25336917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 24921541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21163709
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 22817209
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 19803583
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 20737000
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 18402334
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 23351209
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21967917
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21784042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 27397542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 99629542
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 53365833
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 38207583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 57288667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 70088708
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 61528875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 126777500
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 26911917
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 51283708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19792875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15083208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14429167
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15009458
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15024250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14410417
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14852042
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14026292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13879292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14449417
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14386542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15627667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16216500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14483625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14611458
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19624917
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 19979458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21833792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17834417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20666875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 25734083
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17866959
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21907375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 21939708
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 24585041
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17817541
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Received request.
+  req_body = |
+      {
+        "input": {
+          "path": [
+            ""
+          ],
+          "method": "GET",
+          "payload": null,
+          "user": {
+            "authorities": [
+              {
+                "authority": "OIDC_USER",
+                "attributes": {
+                  "at_hash": "uVYaY4ezRu7Rxy9URNFlBQ",
+                  "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                  "email_verified": false,
+                  "hr_data": [
+                    "parental leave"
+                  ],
+                  "authorizations": [
+                    "dnb.partymaster.write",
+                    "dnb.userregistration.write"
+                  ],
+                  "iss": "http://mykeycloak:8080/realms/DNB",
+                  "typ": "ID",
+                  "preferred_username": "sbsivertsen",
+                  "given_name": "",
+                  "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+                  "sid": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+                  "aud": [
+                    "userregistration"
+                  ],
+                  "acr": "1",
+                  "realm_access": {
+                    "roles": [
+                      "ADMIN",
+                      "USERS"
+                    ]
+                  },
+                  "azp": "userregistration",
+                  "realm_access.roles": [
+                    "ADMIN",
+                    "USERS"
+                  ],
+                  "auth_time": "2024-02-26T16:07:20Z",
+                  "exp": "2024-02-26T16:08:20Z",
+                  "session_state": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+                  "family_name": "",
+                  "iat": "2024-02-26T16:07:20Z",
+                  "jti": "220205f4-a177-4f7f-8052-57d0058f1518"
+                },
+                "idToken": {
+                  "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE3MDg5NjM3MDAsImlhdCI6MTcwODk2MzY0MCwiYXV0aF90aW1lIjoxNzA4OTYzNjQwLCJqdGkiOiIyMjAyMDVmNC1hMTc3LTRmN2YtODA1Mi01N2QwMDU4ZjE1MTgiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiZjVhYzYzODctYzczOC00MGE4LWEzY2YtZDAwYjczZGJmNWIyIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJycGlpeElzQ2hsN1hzUUE5UUV3WTRpTV90QXVFOHVVLXpOdENLQU56ZUhnIiwic2Vzc2lvbl9zdGF0ZSI6IjBmN2IyMzQ3LTcyY2EtNGE5Yy1hYWZkLTUzYjdiZjMwOWNiNSIsImF0X2hhc2giOiJ1VllhWTRlelJ1N1J4eTlVUk5GbEJRIiwiYWNyIjoiMSIsInNpZCI6IjBmN2IyMzQ3LTcyY2EtNGE5Yy1hYWZkLTUzYjdiZjMwOWNiNSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2JzaXZlcnRzZW4iLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIifQ.VjXi6ItkSrhBIRS0WaKgLYuT3LOkuD5qty306j0MY9PkHTUeJvTOxiUKDSipvDy5s6q3lGc20BZDMLunCytFBaHs6ttaKfIGrQrbJ4Jt_wPZvTwcFdpK7myHFo1LCNt2VMcdM7stlUwagJx-5h7reWEARDnHAJNSBPlaUAJvsZi1a-g_LZRqWsGSCK0L_LzYw6C_sfyiBAk0rllCeikTykIGNbkK46qYd8ZtWrI5nKOnzSfLZrCogjhKWWFFW074W4DykXdBsIQrHUnaR7DUqRKyTWaAbrVenCuaeyyGsnawfltTYgAbMZOKUx5vDA3KTy8qL8pjTPlHcHfdCH_pDA",
+                  "issuedAt": "2024-02-26T16:07:20Z",
+                  "expiresAt": "2024-02-26T16:08:20Z",
+                  "claims": {
+                    "at_hash": "uVYaY4ezRu7Rxy9URNFlBQ",
+                    "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                    "email_verified": false,
+                    "iss": "http://mykeycloak:8080/realms/DNB",
+                    "typ": "ID",
+                    "preferred_username": "sbsivertsen",
+                    "given_name": "",
+                    "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+                    "sid": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+                    "aud": [
+                      "userregistration"
+                    ],
+                    "acr": "1",
+                    "azp": "userregistration",
+                    "auth_time": "2024-02-26T16:07:20Z",
+                    "exp": "2024-02-26T16:08:20Z",
+                    "session_state": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+                    "iat": "2024-02-26T16:07:20Z",
+                    "family_name": "",
+                    "jti": "220205f4-a177-4f7f-8052-57d0058f1518"
+                  },
+                  "issuer": "http://mykeycloak:8080/realms/DNB",
+                  "audience": [
+                    "userregistration"
+                  ],
+                  "authenticatedAt": "2024-02-26T16:07:20Z",
+                  "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+                  "authenticationContextClass": "1",
+                  "authenticationMethods": null,
+                  "authorizedParty": "userregistration",
+                  "accessTokenHash": "uVYaY4ezRu7Rxy9URNFlBQ",
+                  "authorizationCodeHash": null,
+                  "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                  "email": null,
+                  "givenName": "",
+                  "familyName": "",
+                  "middleName": null,
+                  "nickName": null,
+                  "preferredUsername": "sbsivertsen",
+                  "picture": null,
+                  "website": null,
+                  "emailVerified": false,
+                  "gender": null,
+                  "birthdate": null,
+                  "phoneNumber": null,
+                  "phoneNumberVerified": null,
+                  "updatedAt": null,
+                  "profile": null,
+                  "address": {
+                    "formatted": null,
+                    "streetAddress": null,
+                    "locality": null,
+                    "region": null,
+                    "postalCode": null,
+                    "country": null
+                  },
+                  "locale": null,
+                  "fullName": null,
+                  "zoneInfo": null
+                },
+                "userInfo": {
+                  "claims": {
+                    "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                    "email_verified": false,
+                    "realm_access": {
+                      "roles": [
+                        "ADMIN",
+                        "USERS"
+                      ]
+                    },
+                    "hr_data": [
+                      "parental leave"
+                    ],
+                    "realm_access.roles": [
+                      "ADMIN",
+                      "USERS"
+                    ],
+                    "authorizations": [
+                      "dnb.partymaster.write",
+                      "dnb.userregistration.write"
+                    ],
+                    "preferred_username": "sbsivertsen",
+                    "given_name": "",
+                    "family_name": ""
+                  },
+                  "email": null,
+                  "givenName": "",
+                  "familyName": "",
+                  "middleName": null,
+                  "nickName": null,
+                  "preferredUsername": "sbsivertsen",
+                  "picture": null,
+                  "website": null,
+                  "emailVerified": false,
+                  "gender": null,
+                  "birthdate": null,
+                  "phoneNumber": null,
+                  "phoneNumberVerified": null,
+                  "updatedAt": null,
+                  "profile": null,
+                  "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                  "address": {
+                    "formatted": null,
+                    "streetAddress": null,
+                    "locality": null,
+                    "region": null,
+                    "postalCode": null,
+                    "country": null
+                  },
+                  "locale": null,
+                  "fullName": null,
+                  "zoneInfo": null
+                }
+              },
+              {
+                "authority": "SCOPE_email"
+              },
+              {
+                "authority": "SCOPE_openid"
+              },
+              {
+                "authority": "SCOPE_profile"
+              }
+            ],
+            "attributes": {
+              "at_hash": "uVYaY4ezRu7Rxy9URNFlBQ",
+              "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "email_verified": false,
+              "hr_data": [
+                "parental leave"
+              ],
+              "authorizations": [
+                "dnb.partymaster.write",
+                "dnb.userregistration.write"
+              ],
+              "iss": "http://mykeycloak:8080/realms/DNB",
+              "typ": "ID",
+              "preferred_username": "sbsivertsen",
+              "given_name": "",
+              "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+              "sid": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+              "aud": [
+                "userregistration"
+              ],
+              "acr": "1",
+              "realm_access": {
+                "roles": [
+                  "ADMIN",
+                  "USERS"
+                ]
+              },
+              "azp": "userregistration",
+              "realm_access.roles": [
+                "ADMIN",
+                "USERS"
+              ],
+              "auth_time": "2024-02-26T16:07:20Z",
+              "exp": "2024-02-26T16:08:20Z",
+              "session_state": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+              "family_name": "",
+              "iat": "2024-02-26T16:07:20Z",
+              "jti": "220205f4-a177-4f7f-8052-57d0058f1518"
+            },
+            "idToken": {
+              "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE3MDg5NjM3MDAsImlhdCI6MTcwODk2MzY0MCwiYXV0aF90aW1lIjoxNzA4OTYzNjQwLCJqdGkiOiIyMjAyMDVmNC1hMTc3LTRmN2YtODA1Mi01N2QwMDU4ZjE1MTgiLCJpc3MiOiJodHRwOi8vbXlrZXljbG9hazo4MDgwL3JlYWxtcy9ETkIiLCJhdWQiOiJ1c2VycmVnaXN0cmF0aW9uIiwic3ViIjoiZjVhYzYzODctYzczOC00MGE4LWEzY2YtZDAwYjczZGJmNWIyIiwidHlwIjoiSUQiLCJhenAiOiJ1c2VycmVnaXN0cmF0aW9uIiwibm9uY2UiOiJycGlpeElzQ2hsN1hzUUE5UUV3WTRpTV90QXVFOHVVLXpOdENLQU56ZUhnIiwic2Vzc2lvbl9zdGF0ZSI6IjBmN2IyMzQ3LTcyY2EtNGE5Yy1hYWZkLTUzYjdiZjMwOWNiNSIsImF0X2hhc2giOiJ1VllhWTRlelJ1N1J4eTlVUk5GbEJRIiwiYWNyIjoiMSIsInNpZCI6IjBmN2IyMzQ3LTcyY2EtNGE5Yy1hYWZkLTUzYjdiZjMwOWNiNSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2JzaXZlcnRzZW4iLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIifQ.VjXi6ItkSrhBIRS0WaKgLYuT3LOkuD5qty306j0MY9PkHTUeJvTOxiUKDSipvDy5s6q3lGc20BZDMLunCytFBaHs6ttaKfIGrQrbJ4Jt_wPZvTwcFdpK7myHFo1LCNt2VMcdM7stlUwagJx-5h7reWEARDnHAJNSBPlaUAJvsZi1a-g_LZRqWsGSCK0L_LzYw6C_sfyiBAk0rllCeikTykIGNbkK46qYd8ZtWrI5nKOnzSfLZrCogjhKWWFFW074W4DykXdBsIQrHUnaR7DUqRKyTWaAbrVenCuaeyyGsnawfltTYgAbMZOKUx5vDA3KTy8qL8pjTPlHcHfdCH_pDA",
+              "issuedAt": "2024-02-26T16:07:20Z",
+              "expiresAt": "2024-02-26T16:08:20Z",
+              "claims": {
+                "at_hash": "uVYaY4ezRu7Rxy9URNFlBQ",
+                "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                "email_verified": false,
+                "iss": "http://mykeycloak:8080/realms/DNB",
+                "typ": "ID",
+                "preferred_username": "sbsivertsen",
+                "given_name": "",
+                "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+                "sid": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+                "aud": [
+                  "userregistration"
+                ],
+                "acr": "1",
+                "azp": "userregistration",
+                "auth_time": "2024-02-26T16:07:20Z",
+                "exp": "2024-02-26T16:08:20Z",
+                "session_state": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+                "iat": "2024-02-26T16:07:20Z",
+                "family_name": "",
+                "jti": "220205f4-a177-4f7f-8052-57d0058f1518"
+              },
+              "issuer": "http://mykeycloak:8080/realms/DNB",
+              "audience": [
+                "userregistration"
+              ],
+              "authenticatedAt": "2024-02-26T16:07:20Z",
+              "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+              "authenticationContextClass": "1",
+              "authenticationMethods": null,
+              "authorizedParty": "userregistration",
+              "accessTokenHash": "uVYaY4ezRu7Rxy9URNFlBQ",
+              "authorizationCodeHash": null,
+              "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "email": null,
+              "givenName": "",
+              "familyName": "",
+              "middleName": null,
+              "nickName": null,
+              "preferredUsername": "sbsivertsen",
+              "picture": null,
+              "website": null,
+              "emailVerified": false,
+              "gender": null,
+              "birthdate": null,
+              "phoneNumber": null,
+              "phoneNumberVerified": null,
+              "updatedAt": null,
+              "profile": null,
+              "address": {
+                "formatted": null,
+                "streetAddress": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "country": null
+              },
+              "locale": null,
+              "fullName": null,
+              "zoneInfo": null
+            },
+            "userInfo": {
+              "claims": {
+                "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+                "email_verified": false,
+                "realm_access": {
+                  "roles": [
+                    "ADMIN",
+                    "USERS"
+                  ]
+                },
+                "hr_data": [
+                  "parental leave"
+                ],
+                "realm_access.roles": [
+                  "ADMIN",
+                  "USERS"
+                ],
+                "authorizations": [
+                  "dnb.partymaster.write",
+                  "dnb.userregistration.write"
+                ],
+                "preferred_username": "sbsivertsen",
+                "given_name": "",
+                "family_name": ""
+              },
+              "email": null,
+              "givenName": "",
+              "familyName": "",
+              "middleName": null,
+              "nickName": null,
+              "preferredUsername": "sbsivertsen",
+              "picture": null,
+              "website": null,
+              "emailVerified": false,
+              "gender": null,
+              "birthdate": null,
+              "phoneNumber": null,
+              "phoneNumberVerified": null,
+              "updatedAt": null,
+              "profile": null,
+              "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "address": {
+                "formatted": null,
+                "streetAddress": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "country": null
+              },
+              "locale": null,
+              "fullName": null,
+              "zoneInfo": null
+            },
+            "claims": {
+              "at_hash": "uVYaY4ezRu7Rxy9URNFlBQ",
+              "sub": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+              "email_verified": false,
+              "hr_data": [
+                "parental leave"
+              ],
+              "authorizations": [
+                "dnb.partymaster.write",
+                "dnb.userregistration.write"
+              ],
+              "iss": "http://mykeycloak:8080/realms/DNB",
+              "typ": "ID",
+              "preferred_username": "sbsivertsen",
+              "given_name": "",
+              "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+              "sid": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+              "aud": [
+                "userregistration"
+              ],
+              "acr": "1",
+              "realm_access": {
+                "roles": [
+                  "ADMIN",
+                  "USERS"
+                ]
+              },
+              "azp": "userregistration",
+              "realm_access.roles": [
+                "ADMIN",
+                "USERS"
+              ],
+              "auth_time": "2024-02-26T16:07:20Z",
+              "exp": "2024-02-26T16:08:20Z",
+              "session_state": "0f7b2347-72ca-4a9c-aafd-53b7bf309cb5",
+              "family_name": "",
+              "iat": "2024-02-26T16:07:20Z",
+              "jti": "220205f4-a177-4f7f-8052-57d0058f1518"
+            },
+            "name": "sbsivertsen",
+            "issuer": "http://mykeycloak:8080/realms/DNB",
+            "audience": [
+              "userregistration"
+            ],
+            "expiresAt": "2024-02-26T16:08:20Z",
+            "issuedAt": "2024-02-26T16:07:20Z",
+            "authenticatedAt": "2024-02-26T16:07:20Z",
+            "nonce": "rpiixIsChl7XsQA9QEwY4iM_tAuE8uU-zNtCKANzeHg",
+            "authenticationContextClass": "1",
+            "authenticationMethods": null,
+            "authorizedParty": "userregistration",
+            "accessTokenHash": "uVYaY4ezRu7Rxy9URNFlBQ",
+            "authorizationCodeHash": null,
+            "subject": "f5ac6387-c738-40a8-a3cf-d00b73dbf5b2",
+            "email": null,
+            "givenName": "",
+            "familyName": "",
+            "middleName": null,
+            "nickName": null,
+            "preferredUsername": "sbsivertsen",
+            "picture": null,
+            "website": null,
+            "emailVerified": false,
+            "gender": null,
+            "birthdate": null,
+            "phoneNumber": null,
+            "phoneNumberVerified": null,
+            "updatedAt": null,
+            "profile": null,
+            "address": {
+              "formatted": null,
+              "streetAddress": null,
+              "locality": null,
+              "region": null,
+              "postalCode": null,
+              "country": null
+            },
+            "locale": null,
+            "fullName": null,
+            "zoneInfo": null
+          }
+        }
+      }
+  req_params = {}
+  client_addr = "127.0.0.1:51355"
+  req_id = 1
+  req_method = "POST"
+  req_path = "/v1/data/dnb/userregistration"
+
+[INFO] Sent response.
+  resp_status = 200
+  resp_bytes = 3189
+  resp_duration = 15.5255
+  resp_body = |
+      {"result":{"allow":false,"eval":{"allow":true,"denied_access_from_hrcode":true,"not_denied":false,"user_write_permission":true},"token":{"allow":true,"jwks":"{\"keys\":[{\"kid\":\"PiBW_GAdr1sIwH4280XpVSiY85kSsREdLt3M953tZ9w\",\"kty\":\"RSA\",\"alg\":\"RS256\",\"use\":\"sig\",\"n\":\"r4GQQj_5NyX0rBQavhG6BshGYiJaSm-WBJl7g1eE4PkM32kRlrwoAUoKVRVldoQAfmN7awOF4Q0-iZnKYECsQb1Ofv9POWWBVsueDOW0BugrRiRk2BoIJIcXuaFqspc3xyYPBzX7l9jux2LEAIrYb2wlrA48ppoanHfy8XHAwTprk4vCVzl7qpegQDC-Tjo_DTMbaG9Bj70Ne-fpYVFA7kl1uGUSxhMc69pmmFGvxcHPUMTb0DwbGq3lN7QGgXg06KE-27jqAMcUhLPpLzu6WvkWVYl8WAFkWRcZE-ZAL3ia7ORSy0RJ0Mg2RFE8OpyP9p1r4LnC_gHdJiVZ6kN7IQ\",\"e\":\"AQAB\",\"x5c\":[\"MIIClTCCAX0CBgGLAW6gMzANBgkqhkiG9w0BAQsFADAOMQwwCgYDVQQDDANETkIwHhcNMjMxMDA1MjAwMDA5WhcNMzMxMDA1MjAwMTQ5WjAOMQwwCgYDVQQDDANETkIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvgZBCP/k3JfSsFBq+EboGyEZiIlpKb5YEmXuDV4Tg+QzfaRGWvCgBSgpVFWV2hAB+Y3trA4XhDT6JmcpgQKxBvU5+/085ZYFWy54M5bQG6CtGJGTYGggkhxe5oWqylzfHJg8HNfuX2O7HYsQAithvbCWsDjymmhqcd/LxccDBOmuTi8JXOXuql6BAML5OOj8NMxtob0GPvQ175+lhUUDuSXW4ZRLGExzr2maYUa/Fwc9QxNvQPBsareU3tAaBeDTooT7buOoAxxSEs+kvO7pa+RZViXxYAWRZFxkT5kAveJrs5FLLREnQyDZEUTw6nI/2nWvgucL+Ad0mJVnqQ3shAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAGISy34SJJxoKjQ2N0tPjp4XObDYr1d+/Ygaegm9/MHO39hULHlIkl8ufDApUqQXZXRovL9jOiBAcxbkMffTIQxqldxuzrSDYcoGM5KnlevMocurjBHsRagSFNG7kpV1Q9THXUz4SYMOzPLrdpvzLLQp2ZdKgwUgY9Dii4W2jTD1ScDYCC8JVpTYT8sjaAvr7YkEMsPb6jEX9eJ6BFRPfaWJu08vqfjuYMWiBeUxJshmGK7qAeK9qAZ+lf3XK07DOcRyUeOSfxcMEM5nznXYCUKmBHYLnyspOeHrNXy0VG/TZT1H3rZyPlZRWjTLV+HuVo1KVm0TYN6bBtECW5oEmuA=\"],\"x5t\":\"HKD_UE-zg7iP_bUvGizKy3p_xe8\",\"x5t#S256\":\"DFbI_n64SDzw3aQ9H8QQHACGZKzvDOTUafB-BJkPxE4\"},{\"kid\":\"zpOPkHoZloU-IEKYUeMniF2OVs83FLPPefT_JlxUYF4\",\"kty\":\"RSA\",\"alg\":\"RSA-OAEP\",\"use\":\"enc\",\"n\":\"z9TQOwWgbeZ02n36gsOAgskK5rDT58Ytr6AiLnMiSxI2PWmryCPfiiiorCROIsM_sDc6rqYjfCqTan3l2ldnUdTxM3t-YoQj4IY6DgYnmxv3Zl3vli0el2FrmNLSUAPesoCBX2iIQFjHqZCvUwrfrAO7G_3y_FIjkv_MlkVr-biYcNlXgalKbKrsD9UqkCkw9QaSTdAzVl1Zvo7_4yGDqdqODpizT1PHt4zrLkuIXSoTxb7Ubffa8QUA5ZLxNb9WPLgG_-gBBBy66PwhQS6GUYjyDA78Z9sTLFQdaDZri8u_hA0nV7i_ekIa-DYAh5HPjwbdiog3vLLYawAQixxrjQ\",\"e\":\"AQAB\",\"x5c\":[\"MIIClTCCAX0CBgGLAW6gsDANBgkqhkiG9w0BAQsFADAOMQwwCgYDVQQDDANETkIwHhcNMjMxMDA1MjAwMDA5WhcNMzMxMDA1MjAwMTQ5WjAOMQwwCgYDVQQDDANETkIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDP1NA7BaBt5nTaffqCw4CCyQrmsNPnxi2voCIucyJLEjY9aavII9+KKKisJE4iwz+wNzqupiN8KpNqfeXaV2dR1PEze35ihCPghjoOBiebG/dmXe+WLR6XYWuY0tJQA96ygIFfaIhAWMepkK9TCt+sA7sb/fL8UiOS/8yWRWv5uJhw2VeBqUpsquwP1SqQKTD1BpJN0DNWXVm+jv/jIYOp2o4OmLNPU8e3jOsuS4hdKhPFvtRt99rxBQDlkvE1v1Y8uAb/6AEEHLro/CFBLoZRiPIMDvxn2xMsVB1oNmuLy7+EDSdXuL96Qhr4NgCHkc+PBt2KiDe8sthrABCLHGuNAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFqyQeA/BgwtphgSWfycleMRlwx1P0NlS8WcJkLdwTXJr35lYrbKOM5nprMG/FyIOC34QK8nlpFnGGtvp0kiI+Tw++TD4yEUpB+K4gwH2V8EuKxE8fwwcTobN+tmf9vhm5mqgmbUu/vQFgrdMvUQZkor1dL0B517G2p1mv443FXTlqS17Mfyg5Hx4dRL5Rdi76IV9y+X4ZN5rNP7KyAAKLEjsrGZ3A2o3Q2to9SpLLWH9bU44/N+9DbtYX0Q8jInhAUlQKIt/PnZCXxaf12nXlQFx+Ohz7ixe4uZkVhq3six/Q7jArnnOC3WPmWhUGBTMtVEtQ5GCqVqM+PKUIPTOf8=\"],\"x5t\":\"Vafnyev6Kfdur-fgT6n166uBKE4\",\"x5t#S256\":\"ZjCVVvUSG6X3Qd88n9Ud2GUjMKiWhAlyWBm8GAviisA\"}]}","time_now_s":1.708963640335e+09},"token_allow":true}}
+      
+
+  client_addr = "127.0.0.1:51355"
+  req_id = 1
+  req_method = "POST"
+  req_path = "/v1/data/dnb/userregistration"
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 66076042
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 91624667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 49547416
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 105673833
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13866166
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14553375
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15893583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14299000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13577083
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14452084
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14443375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13886292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13979625
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13430333
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13409833
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13381208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13983625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13866792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13965084
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14346166
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15174667
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13919708
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14133000
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13961667
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14090917
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13826709
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13945875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13736375
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13840083
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13577083
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13557084
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13843084
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14172583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13781000
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13891709
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13507375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13460834
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13650917
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13662334
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13708292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13615334
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14129041
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 15353709
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14637000
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13653625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13698750
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 14021292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18740875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 23215542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 81395334
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 56566584
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 66126916
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 107094084
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 53395542
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 63294792
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 63513750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 58695958
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 56847875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 69066583
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 50184250
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 97263541
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 100966750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 111988334
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 48181917
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 17152292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 16100458
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 15459666
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14814375
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14673417
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13819500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 14133209
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13683666
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13344459
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13387250
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13528292
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13598667
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13462167
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 20853292
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 17382208
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 35727875
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 13876333
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  err = null
+  duration = 13764459
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21381625
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18166500
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 18304750
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Processed file watch event.
+  duration = 21629542
+  err = null
+
+[DEBUG] Registered file event.
+  event = "WRITE         \"log.txt\""
+
+[INFO] Shutting down...
+
+[INFO] Server shutdown.
+
+[DEBUG] maxprocs: No GOMAXPROCS change to reset
+

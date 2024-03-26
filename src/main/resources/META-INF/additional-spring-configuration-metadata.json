@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "spring.security.oauth2.resourceserver.jwt.secret-key",
+    "type": "java.lang.String",
+    "description": "JWT Secret Key'"
+  },
+  {
+    "name": "spring.security.oauth2.resourceserver.jwt.token-duration",
+    "type": "java.lang.String",
+    "description": "Token duration'"
+  },
+  {
+    "name": "spring.security.oauth2.resourceserver.jwt.auth.converter.resource-id",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.oauth2.resourceserver.jwt.auth.converter.resource-id'"
+  },
+  {
+    "name": "spring.jwt.auth.converter.resource-id",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jwt.auth.converter.resource-id'"
+  },
+  {
+    "name": "spring.jwt.auth.converter.principal-attribute",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jwt.auth.converter.principal-attribute'"
+  },
+  {
+    "name": "app.opa.authz.url",
+    "type": "java.lang.String",
+    "description": "A description for 'app.opa.authz.url'"
+  }
+]}

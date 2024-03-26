@@ -1,0 +1,46 @@
+server:
+  port : 8180
+  #context-path: /usereg 
+app:
+  opa:
+    authz:
+      url: http://opa:8181/v1/data/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  level:
+    root: INFO
+    web: INFO
+    org:
+      springframework:
+        security: INFO
+        web: INFO
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 10000
+            readTimeout: 10000
+            loggerLevel: full
+  profiles:
+        active: default
+  datasource:
+          driver-class-name: org.postgresql.Driver
+          username: postgres
+          password: password
+          name: userreg
+          url: jdbc:postgresql://db:5432/userreg?createDatabaseIfNotExist=true
+  sql:
+      init:
+        mode: always # you won't do this in prod, I'm just doing this for demo purposes
+info:
+  application:
+    name: User Registration
+    description: A user Registration application
+    author: Stig B. Sivertsen
+    version: '@project.version@'

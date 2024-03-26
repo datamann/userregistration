@@ -1,0 +1,57 @@
+{
+  "input": {
+    "path": [
+      "api",
+      "users",
+      "1731"
+    ],
+    "method": "PUT",
+    "payload": {
+      "first_name": "Christopherrrrr",
+      "last_name": "Sivertsen",
+      "email": "asivertsen@gmail.com"
+    },
+    "user": {
+      "tokenValue": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJQaUJXX0dBZHIxc0l3SDQyODBYcFZTaVk4NWtTc1JFZEx0M005NTN0Wjl3In0.eyJleHAiOjE3MTE0MzgzNDcsImlhdCI6MTcxMTQzODI4NywianRpIjoiNWY1Yjk5OWMtMWFlOS00ODMzLThhZDgtNzRjMWVkMjkzNDQwIiwiaXNzIjoiaHR0cDovL215a2V5Y2xvYWs6ODA4MC9yZWFsbXMvRE5CIiwic3ViIjoiNzY4NzZkOTctOTkxMy00M2ZmLTgwODMtYzllZGI2MWE2YWRkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidXNlcnJlZ2lzdHJhdGlvbiIsInNlc3Npb25fc3RhdGUiOiI0MTY1NTkwNy1lNzM2LTQzMjgtYmE2NS0yNjE1YjM5MDliYjIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly91c2VycmVnOjgxODAiXSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwic2lkIjoiNDE2NTU5MDctZTczNi00MzI4LWJhNjUtMjYxNWIzOTA5YmIyIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJyZWFsbV9hY2Nlc3Mucm9sZXMiOlsiVVNFUlMiXSwiYXV0aG9yaXphdGlvbnMiOlsiZG5iLnVzZXJyZWdpc3RyYXRpb24ucmVhZCIsImRuYi5wYXJ0eW1hc3Rlci5yZWFkIl0sInByZWZlcnJlZF91c2VybmFtZSI6InRob3IiLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiIifQ.L4sAs1LkyfohsVryLw_WzRBPxvsuKZAV29U9KnXKTdezDVs5tA4WVxk9gMYgRFMr-2nV9SsDvLdHgcr0L0diDDjDPSuwngueewne5hCEooNLr0AhcFQVG0bX-22GIESitIuiKspc5Q7Jqi8nDgSGZF33ZtW7X3lxZdlYAql2nAeBjIst5Af-abz4bQ-C6VlS6XpsdDxdXrUIYDDGaytTaECgyC-es2KzSxTno8ffgQLsRndhPAF79qc0t2tY5jbFbYlS_FMUpr8swmKrUWCfJjp_7M006qc1F_M1zJjDwQhFoYGNVOoQ13FsttAmalrJL6Z6G0kenlgLuPTJjIibdw",
+      "issuedAt": "2024-03-26T07:31:27Z",
+      "expiresAt": "2024-03-26T07:32:27Z",
+      "headers": {
+        "kid": "PiBW_GAdr1sIwH4280XpVSiY85kSsREdLt3M953tZ9w",
+        "typ": "JWT",
+        "alg": "RS256"
+      },
+      "claims": {
+        "sub": "76876d97-9913-43ff-8083-c9edb61a6add",
+        "email_verified": false,
+        "allowed-origins": [
+          "http://userreg:8180"
+        ],
+        "iss": "http://mykeycloak:8080/realms/DNB",
+        "authorizations": [
+          "dnb.userregistration.read",
+          "dnb.partymaster.read"
+        ],
+        "typ": "Bearer",
+        "preferred_username": "thor",
+        "given_name": "",
+        "sid": "41655907-e736-4328-ba65-2615b3909bb2",
+        "acr": "1",
+        "azp": "userregistration",
+        "scope": "profile email",
+        "realm_access.roles": [
+          "USERS"
+        ],
+        "exp": "2024-03-26T07:32:27Z",
+        "session_state": "41655907-e736-4328-ba65-2615b3909bb2",
+        "iat": "2024-03-26T07:31:27Z",
+        "family_name": "",
+        "jti": "5f5b999c-1ae9-4833-8ad8-74c1ed293440"
+      },
+      "audience": null,
+      "issuer": "http://mykeycloak:8080/realms/DNB",
+      "notBefore": null,
+      "subject": "76876d97-9913-43ff-8083-c9edb61a6add",
+      "id": "5f5b999c-1ae9-4833-8ad8-74c1ed293440"
+    }
+  }
+}
