@@ -24,7 +24,6 @@ import no.sivertsensoftware.userregistration.service.OpaauthorizationService;
 import no.sivertsensoftware.userregistration.service.UserService;
 @BrowserCallable
 @RestController
-@PermitAll
 @RequestMapping("/")
 public class UserController {
 
@@ -38,8 +37,9 @@ public class UserController {
         this.authorizationService = authorizationService;
     }
 
+    @PermitAll
     @Bean
-    public boolean mayBeAllowed() {
+    public boolean isAdmin() {
         var canDoThis = authorizationService.getUserHasWritePermission();
         if (canDoThis == "true") {
             return true;
@@ -54,27 +54,27 @@ public class UserController {
         return userService.findAll();
     }
 
-    @PreAuthorize("@userController.mayBeAllowed()")
+    @PermitAll
     @GetMapping("/api/users/lastname/{last_name}")
     public List<User> findByLastname(@PathVariable("last_name") String last_name) {
         List<User> listOfUsers = userService.findByLastname(last_name);
         return listOfUsers;
     }
 
-    @PreAuthorize("@userController.mayBeAllowed()")
+    @PermitAll
     @GetMapping("/api/users/email/{email}")
     public List<User> findByEmail(@PathVariable("email") String email) {
         List<User> listOfUsers = userService.findByEmail(email);
         return listOfUsers;
     }
 
-    @PreAuthorize("@userController.mayBeAllowed()")
+    @PermitAll
     @GetMapping("/api/users/{id}")
     public Optional<User> findByID(@PathVariable("id") Long id) {
         return userService.findById(id);
     }
 
-    @PreAuthorize("@userController.mayBeAllowed()")
+    @PreAuthorize("@userController.isAdmin()")
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/api/users")
     public User createUser(@RequestBody User user) {
@@ -82,14 +82,14 @@ public class UserController {
         return saved;
     }
 
-    @PreAuthorize("@userController.mayBeAllowed()")
+    @PreAuthorize("@userController.isAdmin()")
     @Transactional
     @DeleteMapping("/api/users/{id}")
     public boolean deleteById(@PathVariable("id") Long id) {
         return userService.deleteById(id);
     }
 
-    @PreAuthorize("@userController.mayBeAllowed()")
+    @PreAuthorize("@userController.isAdmin()")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping("/api/users/{id}")
     public void update(@RequestBody User user, @PathVariable("id") Long id) {

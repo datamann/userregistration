@@ -3,6 +3,7 @@ package no.sivertsensoftware.userregistration.config;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authorization.AuthorizationDecision;
 import org.springframework.security.authorization.AuthorizationManager;
@@ -55,42 +56,47 @@ public class OPAAuthorizationManager implements AuthorizationManager<RequestAuth
         if (allow != null) {
             authorizationService.setAllow(allow);
         } else {
-            authorizationService.setAllow("No value!");
+            authorizationService.setAllow("false");
         }
 
         String not_denied = opaDataResponse.getResult().getEval().get("not_denied");
         if (not_denied != null){
             authorizationService.setNotDenied(not_denied);
         } else {
-            authorizationService.setNotDenied("No value!");
+            authorizationService.setNotDenied("false");
         }
 
         String user_read_permission = opaDataResponse.getResult().getEval().get("user_read_permission");
         if (user_read_permission != null || user_read_permission != "null"){
             authorizationService.setReadPermission(user_read_permission);
         } else {
-             authorizationService.setReadPermission("No value!");
+             authorizationService.setReadPermission("false");
         }
 
         String user_write_permission = opaDataResponse.getResult().getEval().get("user_write_permission");
         if (user_write_permission != null || user_write_permission != "null"){
             authorizationService.setWritePermission(user_write_permission);
         } else {
-             authorizationService.setWritePermission("No value!");
+             authorizationService.setWritePermission("false");
         }
 
         String user_converted_to_read_only = opaDataResponse.getResult().getEval().get("user_converted_to_read_only");
         if (user_converted_to_read_only != null  || user_converted_to_read_only != "null") {
             authorizationService.setReadOnlyPermission(user_converted_to_read_only);
         } else {
-            authorizationService.setReadOnlyPermission("No value!");
+            authorizationService.setReadOnlyPermission("false");
         }
 
-        if (authorizationService.getReadPermission() == "true" || authorizationService.getReadOnlyPermission() == "true") {
-            authorizationService.setUserHasWritePermission("false");
-        } else {
+        if (!( authorizationService.getReadPermission() == null || authorizationService.getReadOnlyPermission() == null )){
+            if ( authorizationService.getReadPermission() == "true" || authorizationService.getReadOnlyPermission() == "true" ){
+                authorizationService.setUserHasWritePermission("false");
+            }
+        } else if ( authorizationService.getWritePermission() == "true" ){
             authorizationService.setUserHasWritePermission("true");
+        } else {
+            authorizationService.setUserHasWritePermission("false");
         }
+
         return new AuthorizationDecision(opaDataResponse.getResult().getAllow());
     }
 }

@@ -1,13 +1,9 @@
 package no.sivertsensoftware.userregistration.service;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
-
 import no.sivertsensoftware.userregistration.model.Opaauthorization;
 
 @Configuration
-@Order(Ordered.HIGHEST_PRECEDENCE)
 public class OpaauthorizationService {
 
     private final Opaauthorization authorization;

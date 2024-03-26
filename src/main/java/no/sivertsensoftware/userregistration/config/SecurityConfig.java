@@ -73,38 +73,11 @@ public class SecurityConfig {
         return (SecurityFilterChain) http.build();
     }
 
-    // @Bean
-	// public ServerLogoutSuccessHandler keycloakLogoutSuccessHandler(ReactiveClientRegistrationRepository repository) {
-    //     OidcClientInitiatedServerLogoutSuccessHandler oidcLogoutSuccessHandler =
-    //             new OidcClientInitiatedServerLogoutSuccessHandler(repository);
-    //     oidcLogoutSuccessHandler.setPostLogoutRedirectUri("{baseUrl}");
-    //     return oidcLogoutSuccessHandler;
-    // }
-
     private LogoutSuccessHandler oidcLogoutSuccessHandler() {
 		OidcClientInitiatedLogoutSuccessHandler oidcLogoutSuccessHandler = new OidcClientInitiatedLogoutSuccessHandler(this.clientRegistrationRepository);
 		oidcLogoutSuccessHandler.setPostLogoutRedirectUri("{baseUrl}");
 		return oidcLogoutSuccessHandler;
 	}
-
-    /*
-     * Scope to Roles converter for oauth2Login. User Realm Role -> Token Claim Name changed to "realm_access\.roles", Access Token Claim enabled.
-     */
-    // @Bean
-    // JwtAuthenticationConverter jwtAuthenticationConverter() {
-    //     System.out.println("--------- SecurityConfig I'm entering jwtAuthenticationConverter.");
-
-    //     var claimName = "realm_access.roles";
-    //     var preFix = "ROLE_";
-
-    //     final JwtGrantedAuthoritiesConverter grantedAuthoritiesConverter = new JwtGrantedAuthoritiesConverter();
-    //     grantedAuthoritiesConverter.setAuthoritiesClaimName(claimName);
-    //     grantedAuthoritiesConverter.setAuthorityPrefix(preFix);
-
-    //     final JwtAuthenticationConverter jwtAuthenticationConverter = new JwtAuthenticationConverter();
-    //     jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(grantedAuthoritiesConverter);
-    //     return jwtAuthenticationConverter;
-    // }
 
     /*
      * Scope to Roles converter for oauth2ResourceServer. User Realm Role -> Token Claim Name changed to "realm_access\.roles", UserInfo claim enabled
@@ -127,29 +100,4 @@ public class SecurityConfig {
             return mappedAuthorities;
         };
     }
-    /*
-     * Mapper for SCOPEs
-     */
-
-    // private GrantedAuthoritiesMapper grantedAuthoritiesMapper() {
-    //     return (authorities) -> {
-    //         Set<GrantedAuthority> mappedAuthorities = new HashSet<>();
-
-    //         authorities.forEach((authority) -> {
-    //             GrantedAuthority mappedAuthority;
-
-    //             if (authority instanceof OidcUserAuthority) {
-    //                 OidcUserAuthority userAuthority = (OidcUserAuthority) authority;
-    //                 mappedAuthority = new OidcUserAuthority("OIDC_USER", userAuthority.getIdToken(), userAuthority.getUserInfo());
-    //             } else if (authority instanceof OAuth2UserAuthority) {
-    //                 OAuth2UserAuthority userAuthority = (OAuth2UserAuthority) authority;
-    //                 mappedAuthority = new OAuth2UserAuthority("OAUTH2_USER", userAuthority.getAttributes());
-    //             } else {
-    //                 mappedAuthority = authority;
-    //             }
-    //             mappedAuthorities.add(mappedAuthority);
-    //         });
-    //         return mappedAuthorities;
-    //     };
-    // }
 }
