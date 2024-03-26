@@ -1,0 +1,8 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.debug.settings.onBuildFailureProceed": true,
+    "maven.view": "hierarchical",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.hover.sticky": true
+}
