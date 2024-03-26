@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-node_modules
-=======
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -40,7 +37,7 @@ build/
 pgadmin/
 postgresql/
 keycloak/
-node_modules
+node_modules/
 
 ### Exclude OPA binaries ###
 opa_policies/opa
