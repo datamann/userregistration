@@ -3,6 +3,7 @@ version: '3.8'
 services:
   db:
     image: postgres
+    hostname: db
     container_name: postgres
     restart: unless-stopped
     ports:
@@ -20,10 +21,11 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4:latest
+    hostname: pgadmin
     container_name: pgadmin
     restart: unless-stopped
     ports:
-      - "8081:8081"
+      - 8081:8081/tcp
     expose:
       - 8081
     environment:
@@ -32,21 +34,19 @@ services:
       PGADMIN_LISTEN_PORT: 8081
       PGADMIN_CONFIG_SERVER_MODE: "False"
       PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
-    
     volumes:
       - ./pgadmin:/var/lib/pgadmin
       - ./docker_pgadmin_servers.json:/pgadmin4/servers.json
-
     entrypoint:
       - "/bin/sh"
       - "-c"
-      - "/bin/echo 'db:5432:*:postgres:password' > /tmp/pgpassfile && chmod 600 /tmp/pgpassfile && /entrypoint.sh"
-    
+      - "/bin/echo 'localhost:5432:*:postgres:password' > /tmp/pgpassfile && chmod 600 /tmp/pgpassfile && /entrypoint.sh"
     networks:
       - userregnetwork
 
   opa:
     image: openpolicyagent/opa:edge-static-debug
+    hostname: opa
     container_name: openpolicyagent
     restart: unless-stopped
     ports:
@@ -62,6 +62,7 @@ services:
 # docker run --name mykeycloak -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=change_me quay.io/keycloak/keycloak:latest start-dev
   keycloak:
     image: quay.io/keycloak/keycloak:latest
+    hostname: mykeycloak
     container_name: mykeycloak
     restart: unless-stopped
     ports:
@@ -74,55 +75,6 @@ services:
       - ./keycloak:/opt/keycloak
     networks:
       - userregnetwork
-  
-  # https://www.openpolicyagent.org/docs/latest/kafka-authorization/
-  # Kafka cluster. Download Kafka tool: https://www.kafkatool.com/download.html
-  # zookeeper:
-  #   image: confluentinc/cp-zookeeper:6.2.1
-  #   container_name: zookeeper
-  #   ports:
-  #     - "2181:2181"
-  #   environment:
-  #     - ALLOW_ANONYMOUS_LOGIN=yes
-  #     - ZOOKEEPER_CLIENT_PORT=2181
-  #   networks:
-  #     - userregnetwork
-
-  # kafka:
-  #   image: confluentinc/cp-kafka:6.2.1
-  #   container_name: kafka
-  #   ports:
-  #     - "9093:9093"
-  #   environment:
-  #     KAFKA_ADVERTISED_HOST_NAME: localhost
-  #     # Set cache expiry to low value for development in order to see decisions
-  #     KAFKA_OPA_AUTHORIZER_CACHE_EXPIRE_AFTER_SECONDS: 10
-  #     KAFKA_OPA_AUTHORIZER_URL: http://opa:8181/v1/data/kafka/authz/allow
-  #     KAFKA_AUTHORIZER_CLASS_NAME: org.openpolicyagent.kafka.OpaAuthorizer
-  #     KAFKA_BROKER_ID: 1
-  #     KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
-  #     KAFKA_ADVERTISED_LISTENERS: SSL://localhost:9093
-  #     KAFKA_SECURITY_INTER_BROKER_PROTOCOL: SSL
-  #     KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-  #     KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
-  #     KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
-  #     KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
-  #     KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
-  #     #KAFKA_SSL_KEYSTORE_FILENAME: server.keystore
-  #     #KAFKA_SSL_KEYSTORE_CREDENTIALS: credentials.txt
-  #     #KAFKA_SSL_KEY_CREDENTIALS: credentials.txt
-  #     #KAFKA_SSL_TRUSTSTORE_FILENAME: server.truststore
-  #     #KAFKA_SSL_TRUSTSTORE_CREDENTIALS: credentials.txt
-  #     #KAFKA_SSL_CLIENT_AUTH: required
-  #     CLASSPATH: "/plugin/*"
-  #   volumes:
-  #     - "./plugin:/plugin"
-  #     #- "./cert/server:/etc/kafka/secrets"
-  #   depends_on:
-  #     - opa
-  #     - zookeeper
-  #   networks:
-  #     - userregnetwork
 
 networks:
   userregnetwork:

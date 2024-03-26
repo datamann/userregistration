@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "no.sivertsensoftware.userregistration.Application",
+            "projectName": "userregistration"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UserregistrationApplication<userregistration>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "no.sivertsensoftware.userregistration.UserregistrationApplication",
+            "projectName": "userregistration",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

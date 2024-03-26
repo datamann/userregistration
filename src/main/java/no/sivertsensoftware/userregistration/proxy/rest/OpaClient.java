@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 @RestController
 public interface OpaClient {
 
-    @PostMapping("dnb/userregistration/auth")
+    @PostMapping("dnb/userregistration")
     OPADataResponse authorizedToAccessAPI(@RequestBody OPADataRequest opaDataRequest);
     
 }

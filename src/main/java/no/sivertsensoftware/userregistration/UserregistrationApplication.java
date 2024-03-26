@@ -1,5 +1,7 @@
 package no.sivertsensoftware.userregistration;
 
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +16,9 @@ import no.sivertsensoftware.userregistration.repository.UserRepository;
 @SpringBootApplication
 @EnableFeignClients
 @EnableMethodSecurity
-public class UserregistrationApplication {
+public class UserregistrationApplication implements ApplicationRunner{
+
+	//private static final Logger logger = LogManager.getLogger(UserregistrationApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(UserregistrationApplication.class, args);
@@ -25,9 +29,9 @@ public class UserregistrationApplication {
 		return args -> {
 			User user1 = new User(null, null, null, null);
 			user1.setId(null);
-			user1.setFirst_name("Stig");
-			user1.setLast_name("Sivertsen");
-			user1.setEmail("sbsivertsen@gmail.com");
+			user1.setFirst_name("Ola");
+			user1.setLast_name("Normann");
+			user1.setEmail("ola.normann@gmail.com");
 			userRepository.save(user1);
 		};
 	}
@@ -36,5 +40,9 @@ public class UserregistrationApplication {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
+	@Override
+	public void run(ApplicationArguments args) throws Exception {
+	}
 
 }

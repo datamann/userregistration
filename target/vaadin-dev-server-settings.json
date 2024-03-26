@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/./frontend/generated/jar-resources",
+  "staticOutput": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/target/classes/META-INF/VAADIN/config",
+  "frontendBundleOutput": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/target/classes/META-INF/VAADIN/webapp",
+  "devBundleOutput": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/src/main/dev-bundle/config",
+  "jarResourcesFolder": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "/Users/stigb.sivertsen/Library/Mobile Documents/com~apple~CloudDocs/git/UserRegistration/userregistration/target/sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}

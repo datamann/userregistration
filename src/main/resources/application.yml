@@ -1,9 +1,10 @@
 server:
   port : 8180
+  #context-path: /usereg 
 app:
   opa:
     authz:
-      url: http://localhost:8181/v1/data/
+      url: http://opa:8181/v1/data/
 management:
   endpoints:
     web:
@@ -12,18 +13,19 @@ management:
 logging:
   level:
     root: INFO
+    web: INFO
     org:
       springframework:
-        security: DEBUG
-        web: DEBUG
+        security: INFO
+        web: INFO
 spring:
   cloud:
     openfeign:
       client:
         config:
           default:
-            connectTimeout: 5000
-            readTimeout: 5000
+            connectTimeout: 10000
+            readTimeout: 10000
             loggerLevel: full
   profiles:
         active: default
@@ -32,7 +34,7 @@ spring:
           username: postgres
           password: password
           name: userreg
-          url: jdbc:postgresql://localhost:5432/userreg?createDatabaseIfNotExist=true
+          url: jdbc:postgresql://db:5432/userreg?createDatabaseIfNotExist=true
   sql:
       init:
         mode: always # you won't do this in prod, I'm just doing this for demo purposes

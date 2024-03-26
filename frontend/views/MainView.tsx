@@ -79,7 +79,8 @@ export default function MainView() {
         name="first_name"
         placeholder="First name"
         autocomplete="given-name"
-        disabled={!isadmin}>
+        disabled={!isadmin}
+        >
         <Tooltip slot="tooltip" text="Enter first name!" />
       </TextField>
       
@@ -87,7 +88,8 @@ export default function MainView() {
         name="last_name"
         placeholder="Last name"
         autocomplete="family-name"
-        disabled={!isadmin}>
+        disabled={!isadmin}
+        >
         <Tooltip slot="tooltip" text="Enter last name!" />
         </TextField>
 
@@ -96,7 +98,8 @@ export default function MainView() {
         name="email"
         placeholder="E-Mail"
         autocomplete="on"
-        disabled={!isadmin}>
+        disabled={!isadmin}
+        >
         <Tooltip slot="tooltip" text="Enter a valid email address!" />
       </EmailField>
 

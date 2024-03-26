@@ -1,7 +1,11 @@
 package no.sivertsensoftware.userregistration.config;
 
+import java.util.Map;
+import org.springframework.stereotype.Component;
+
 import lombok.Data;
 
+@Component
 @Data
 public class OPADataResponse {
 
@@ -10,6 +14,6 @@ public class OPADataResponse {
     @Data
     public static class OPAResult{
         private Boolean allow;
+        Map<String, String> eval;
     }
-    
 }
