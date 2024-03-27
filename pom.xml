@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.5</version>
+		<version>3.1.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -16,7 +16,7 @@
 	<description>Demo project for Policy-based Access Control. Created in Java Spring Boot with a Vaadin Hilla, Keycloak and Open Policy Agent</description>
 	
 	<properties>
-		<java.version>17</java.version>
+		<java.version>22</java.version>
 		<hilla.version>2.2.0</hilla.version>
 		<spring-cloud.version>2022.0.4</spring-cloud.version>
 	</properties>

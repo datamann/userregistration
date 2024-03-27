@@ -36,8 +36,8 @@ public class UserregistrationApplication implements ApplicationRunner{
 		};
 	}
 
-	@Bean
-    public RestTemplate restTemplate() {
+    @Bean
+    RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
