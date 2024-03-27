@@ -1,7 +1,7 @@
 interface User {
-    email?: string;
-    first_name?: string;
     id?: number;
+    first_name?: string;
     last_name?: string;
+    email?: string;
 }
 export default User;
