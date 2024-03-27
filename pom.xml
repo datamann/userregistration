@@ -5,6 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+		<!-- <version>3.2.0</version> -->
 		<version>3.1.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -19,6 +20,7 @@
 		<java.version>22</java.version>
 		<hilla.version>2.2.0</hilla.version>
 		<spring-cloud.version>2022.0.4</spring-cloud.version>
+		<!-- <spring-cloud.version>2023.0.0</spring-cloud.version> -->
 	</properties>
 	<dependencies>
 		<!-- <dependency>
@@ -47,6 +49,12 @@
 		<dependency>
 			<groupId>dev.hilla</groupId>
 			<artifactId>hilla-react-spring-boot-starter</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>checker-qual</artifactId>
+					<groupId>org.checkerframework</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -131,7 +139,7 @@
 			<version>4.4</version>
 		</dependency> -->
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 			<exclusions>
@@ -140,7 +148,7 @@
 					<artifactId>spring-boot-starter-logging</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -158,6 +166,14 @@
 
  <dependencyManagement>
         <dependencies>
+
+			<!-- spring-boot-starter-oauth2-client version conflict resolver. -->
+    		<dependency>
+    			<groupId>com.nimbusds</groupId>
+    			<artifactId>nimbus-jose-jwt</artifactId>
+    			<version>9.24.4</version>
+    		</dependency>
+
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -172,13 +188,13 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-            <dependency>
+            <!-- <dependency>
                 <groupId>org.keycloak.bom</groupId>
                 <artifactId>keycloak-adapter-bom</artifactId>
                 <version>19.0.2</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
+            </dependency> -->
         </dependencies>
     </dependencyManagement>
  

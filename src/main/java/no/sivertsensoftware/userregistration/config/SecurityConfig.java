@@ -43,7 +43,6 @@ public class SecurityConfig {
         return new MvcRequestMatcher.Builder(introspector);
     }
 
-    @SuppressWarnings("removal")
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http, MvcRequestMatcher.Builder mvc) throws Exception {
 
