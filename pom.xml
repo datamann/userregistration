@@ -5,7 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.5</version>
+		<!-- <version>3.2.0</version> -->
+		<version>3.1.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -16,9 +17,10 @@
 	<description>Demo project for Policy-based Access Control. Created in Java Spring Boot with a Vaadin Hilla, Keycloak and Open Policy Agent</description>
 	
 	<properties>
-		<java.version>17</java.version>
+		<java.version>22</java.version>
 		<hilla.version>2.2.0</hilla.version>
 		<spring-cloud.version>2022.0.4</spring-cloud.version>
+		<!-- <spring-cloud.version>2023.0.0</spring-cloud.version> -->
 	</properties>
 	<dependencies>
 		<!-- <dependency>
@@ -39,14 +41,20 @@
 			<optional>true</optional>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
+        </dependency> -->
 
 		<dependency>
 			<groupId>dev.hilla</groupId>
 			<artifactId>hilla-react-spring-boot-starter</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>checker-qual</artifactId>
+					<groupId>org.checkerframework</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -54,31 +62,31 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-spring-boot-starter</artifactId>
-        </dependency>
+        </dependency> -->
 
-		<dependency>
+		<!-- <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-spring-security-adapter</artifactId>
-        </dependency>
+        </dependency> -->
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.security.oauth.boot</groupId>
 			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
 			<version>2.6.8</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -90,11 +98,11 @@
 			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -120,18 +128,18 @@
 			<scope>test</scope>
 		</dependency>
 	
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
-		</dependency>
+		</dependency> -->
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
 			<version>4.4</version>
-		</dependency>
+		</dependency> -->
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 			<exclusions>
@@ -140,7 +148,7 @@
 					<artifactId>spring-boot-starter-logging</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -158,6 +166,14 @@
 
  <dependencyManagement>
         <dependencies>
+
+			<!-- spring-boot-starter-oauth2-client version conflict resolver. -->
+    		<dependency>
+    			<groupId>com.nimbusds</groupId>
+    			<artifactId>nimbus-jose-jwt</artifactId>
+    			<version>9.24.4</version>
+    		</dependency>
+
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
@@ -172,13 +188,13 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-            <dependency>
+            <!-- <dependency>
                 <groupId>org.keycloak.bom</groupId>
                 <artifactId>keycloak-adapter-bom</artifactId>
                 <version>19.0.2</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
+            </dependency> -->
         </dependencies>
     </dependencyManagement>
  

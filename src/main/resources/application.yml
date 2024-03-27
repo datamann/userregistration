@@ -10,14 +10,17 @@ management:
     web:
       exposure:
         include: '*'
+#debug: true
 logging:
   level:
+    [no.sivertsensoftware]: TRACE
     root: INFO
-    web: INFO
+    web: TRACE
     org:
+      hibernate: DEBUG
       springframework:
-        security: INFO
-        web: INFO
+        security: TRACE
+        web: TRACE
 spring:
   cloud:
     openfeign:
@@ -40,7 +43,7 @@ spring:
         mode: always # you won't do this in prod, I'm just doing this for demo purposes
 info:
   application:
-    name: User Registration
-    description: A user Registration application
+    name: Contact Registration
+    description: A Contact Registration application, ${app.name}
     author: Stig B. Sivertsen
     version: '@project.version@'

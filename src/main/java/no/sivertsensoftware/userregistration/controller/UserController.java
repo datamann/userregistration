@@ -2,9 +2,11 @@ package no.sivertsensoftware.userregistration.controller;
 
 import java.util.List;
 import java.util.Optional;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,12 +24,13 @@ import jakarta.annotation.security.PermitAll;
 import no.sivertsensoftware.userregistration.model.User;
 import no.sivertsensoftware.userregistration.service.OpaauthorizationService;
 import no.sivertsensoftware.userregistration.service.UserService;
+
 @BrowserCallable
 @RestController
 @RequestMapping("/")
 public class UserController {
 
-    //private static final Logger logger = LogManager.getLogger(UserController.class);
+    private static final Logger logger = LogManager.getLogger(UserController.class);
 
     private final UserService userService;
     private final OpaauthorizationService authorizationService;
@@ -41,6 +44,8 @@ public class UserController {
     @Bean
     public boolean isAdmin() {
         var canDoThis = authorizationService.getUserHasWritePermission();
+        logger.info("----- UserController ----- isAdmin: Logged inn user have write permission: " + canDoThis);
+        
         if (canDoThis == "true") {
             return true;
         } else {
@@ -74,7 +79,7 @@ public class UserController {
         return userService.findById(id);
     }
 
-    @PreAuthorize("@userController.isAdmin()")
+    @PermitAll
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/api/users")
     public User createUser(@RequestBody User user) {
@@ -82,14 +87,14 @@ public class UserController {
         return saved;
     }
 
-    @PreAuthorize("@userController.isAdmin()")
+    @PermitAll
     @Transactional
     @DeleteMapping("/api/users/{id}")
     public boolean deleteById(@PathVariable("id") Long id) {
         return userService.deleteById(id);
     }
 
-    @PreAuthorize("@userController.isAdmin()")
+    @PermitAll
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping("/api/users/{id}")
     public void update(@RequestBody User user, @PathVariable("id") Long id) {

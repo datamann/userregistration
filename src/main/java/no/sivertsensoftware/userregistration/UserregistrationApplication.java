@@ -7,7 +7,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.web.client.RestTemplate;
 
 import no.sivertsensoftware.userregistration.model.User;
@@ -15,7 +14,7 @@ import no.sivertsensoftware.userregistration.repository.UserRepository;
 
 @SpringBootApplication
 @EnableFeignClients
-@EnableMethodSecurity
+//@EnableMethodSecurity
 public class UserregistrationApplication implements ApplicationRunner{
 
 	//private static final Logger logger = LogManager.getLogger(UserregistrationApplication.class);
@@ -36,8 +35,9 @@ public class UserregistrationApplication implements ApplicationRunner{
 		};
 	}
 
-	@Bean
-    public RestTemplate restTemplate() {
+	// Used by Keycloak
+    @Bean
+    RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
