@@ -1,3 +1,5 @@
+# This repo is no longer maintained and visit [https://github.com/datamann/contact-registration](https://github.com/datamann/contact-registration) for new updates.
+
 # User Registration
 
 A Spring Boot REST API and Vaadin Hilla frontend for user registration.
